@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://dpd.ru/ws/tracing/2011-11-18" targetNamespace="http://dpd.ru/ws/tracing/2011-11-18" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="WSFault" type="tns:WSFault" />
+  <xs:element name="confirm" type="tns:confirm" />
+  <xs:element name="confirmResponse" type="tns:confirmResponse" />
+  <xs:element name="getStatesByClient" type="tns:getStatesByClient" />
+  <xs:element name="getStatesByClientOrder" type="tns:getStatesByClientOrder" />
+  <xs:element name="getStatesByClientOrderResponse" type="tns:getStatesByClientOrderResponse" />
+  <xs:element name="getStatesByClientParcel" type="tns:getStatesByClientParcel" />
+  <xs:element name="getStatesByClientParcelResponse" type="tns:getStatesByClientParcelResponse" />
+  <xs:element name="getStatesByClientResponse" type="tns:getStatesByClientResponse" />
+  <xs:element name="getStatesByDPDOrder" type="tns:getStatesByDPDOrder" />
+  <xs:element name="getStatesByDPDOrderResponse" type="tns:getStatesByDPDOrderResponse" />
+  <xs:element name="stateParcels" type="tns:stateParcels" />
+  <xs:complexType name="getStatesByClientParcel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="request" type="tns:requestClientParcel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="requestClientParcel">
+    <xs:sequence>
+      <xs:element name="auth" type="tns:auth" />
+      <xs:element name="clientParcelNr" type="xs:string" />
+      <xs:element minOccurs="0" name="pickupDate" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="auth">
+    <xs:sequence>
+      <xs:element name="clientNumber" type="xs:long" />
+      <xs:element name="clientKey" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getStatesByClientParcelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:stateParcels" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="stateParcels">
+    <xs:sequence>
+      <xs:element name="docId" type="xs:long" />
+      <xs:element name="docDate" type="xs:dateTime" />
+      <xs:element name="clientNumber" type="xs:long" />
+      <xs:element name="resultComplete" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="states" type="tns:stateParcel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="stateParcel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="clientOrderNr" type="xs:string" />
+      <xs:element minOccurs="0" name="clientParcelNr" type="xs:string" />
+      <xs:element name="dpdOrderNr" type="xs:string" />
+      <xs:element name="dpdParcelNr" type="xs:string" />
+      <xs:element name="pickupDate" type="xs:date" />
+      <xs:element minOccurs="0" name="dpdOrderReNr" type="xs:string" />
+      <xs:element minOccurs="0" name="dpdParcelReNr" type="xs:string" />
+      <xs:element minOccurs="0" name="isReturn" type="xs:boolean" />
+      <xs:element minOccurs="0" name="planDeliveryDate" type="xs:date" />
+      <xs:element name="newState" type="xs:string" />
+      <xs:element name="transitionTime" type="xs:dateTime" />
+      <xs:element name="terminalCode" type="xs:string" />
+      <xs:element name="terminalCity" type="xs:string" />
+      <xs:element minOccurs="0" name="incidentCode" type="xs:string" />
+      <xs:element minOccurs="0" name="incidentName" type="xs:string" />
+      <xs:element minOccurs="0" name="consignee" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="WSFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="code" type="xs:string" />
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getStatesByClient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="request" type="tns:requestClient" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="requestClient">
+    <xs:sequence>
+      <xs:element name="auth" type="tns:auth" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getStatesByClientResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:stateParcels" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getStatesByDPDOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="request" type="tns:requestDpdOrder" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="requestDpdOrder">
+    <xs:sequence>
+      <xs:element name="auth" type="tns:auth" />
+      <xs:element name="dpdOrderNr" type="xs:string" />
+      <xs:element minOccurs="0" name="pickupYear" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getStatesByDPDOrderResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:stateParcels" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getStatesByClientOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="request" type="tns:requestClientOrder" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="requestClientOrder">
+    <xs:sequence>
+      <xs:element name="auth" type="tns:auth" />
+      <xs:element name="clientOrderNr" type="xs:string" />
+      <xs:element minOccurs="0" name="pickupDate" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getStatesByClientOrderResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:stateParcels" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="confirm">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="request" type="tns:requestConfirm" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="requestConfirm">
+    <xs:sequence>
+      <xs:element name="auth" type="tns:auth" />
+      <xs:element name="docId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="confirmResponse">
+    <xs:sequence />
+  </xs:complexType>
+</xs:schema>

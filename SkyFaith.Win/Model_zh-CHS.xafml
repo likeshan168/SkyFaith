@@ -1,0 +1,1802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application VersionFormat="版本 {0}.{1}.{2}" ProtectedContentText="受保护的内容" Title="标签系统">
+  <ActionDesign>
+    <Actions>
+      <Action Id="About Info" Caption="关于..." />
+      <Action Id="AddFromFile" Caption="从文件添加..." />
+      <Action Id="Cancel" Caption="取消" />
+      <Action Id="CancelAction" Caption="取消" />
+      <Action Id="ChangePasswordByUser" Caption="更改我的密码" />
+      <Action Id="ChangeVariant" Caption="视图" />
+      <Action Id="ChooseSkin" Caption="选择皮肤">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Flat" Caption="单位" />
+          <ChoiceActionItem Id="Office2003" Caption="Office2003 中" />
+          <ChoiceActionItem Id="Skins" Caption="外观">
+            <ChoiceActionItems>
+              <ChoiceActionItem Id="Black" Caption="黑色" />
+              <ChoiceActionItem Id="Blue" Caption="蓝色" />
+              <ChoiceActionItem Id="Blueprint" Caption="蓝图" />
+              <ChoiceActionItem Id="Caramel" Caption="焦糖" />
+              <ChoiceActionItem Id="Coffee" Caption="咖啡" />
+              <ChoiceActionItem Id="Dark Side" Caption="黑暗的一面" />
+              <ChoiceActionItem Id="Darkroom" Caption="暗房" />
+              <ChoiceActionItem Id="DevExpress Dark Style" Caption="DevExpress 黑暗风格" />
+              <ChoiceActionItem Id="DevExpress Style" Caption="DevExpress 风格" />
+              <ChoiceActionItem Id="Foggy" Caption="有雾" />
+              <ChoiceActionItem Id="Glass Oceans" Caption="玻璃海洋" />
+              <ChoiceActionItem Id="High Contrast" Caption="高对比度" />
+              <ChoiceActionItem Id="iMaginary" Caption="虚构" />
+              <ChoiceActionItem Id="Lilian" Caption="莉莲 ·" />
+              <ChoiceActionItem Id="Liquid Sky" Caption="液体的天空" />
+              <ChoiceActionItem Id="London Liquid Sky" Caption="伦敦液体天空" />
+              <ChoiceActionItem Id="Metropolis" Caption="都市" />
+              <ChoiceActionItem Id="Metropolis Dark" Caption="大都市黑暗" />
+              <ChoiceActionItem Id="Money Twins" Caption="钱对双胞胎" />
+              <ChoiceActionItem Id="Office 2007 Black" Caption="Office 2007 黑" />
+              <ChoiceActionItem Id="Office 2007 Blue" Caption="Office 2007 蓝色" />
+              <ChoiceActionItem Id="Office 2007 Green" Caption="Office 2007 绿色" />
+              <ChoiceActionItem Id="Office 2007 Pink" Caption="Office 2007 粉红色" />
+              <ChoiceActionItem Id="Office 2007 Silver" Caption="Office 2007 银" />
+              <ChoiceActionItem Id="Office 2010 Black" Caption="Office 2010 黑色" />
+              <ChoiceActionItem Id="Office 2010 Blue" Caption="Office 2010 蓝色" />
+              <ChoiceActionItem Id="Office 2010 Silver" Caption="Office 2010 银" />
+              <ChoiceActionItem Id="Office 2013" Caption="办公室 2013 年" />
+              <ChoiceActionItem Id="Office 2013 Dark Gray" Caption="办公室 2013年暗灰" />
+              <ChoiceActionItem Id="Office 2013 Light Gray" Caption="办公室 2013年浅灰色" />
+              <ChoiceActionItem Id="Office 2016 Colorful" Caption="办公室 2016 年丰富多彩" />
+              <ChoiceActionItem Id="Office 2016 Dark" Caption="办公室 2016年黑暗" />
+              <ChoiceActionItem Id="Pumpkin" Caption="南瓜" />
+              <ChoiceActionItem Id="Seven" Caption="七" />
+              <ChoiceActionItem Id="Seven Classic" Caption="七个经典" />
+              <ChoiceActionItem Id="Sharp" Caption="锋利" />
+              <ChoiceActionItem Id="Sharp Plus" Caption="再加上锋利" />
+              <ChoiceActionItem Id="Springtime" Caption="春天" />
+              <ChoiceActionItem Id="Stardust" Caption="星尘" />
+              <ChoiceActionItem Id="Summer 2008" Caption="2008 年夏天" />
+              <ChoiceActionItem Id="The Asphalt World" Caption="沥青世界" />
+              <ChoiceActionItem Id="Valentine" Caption="情人节" />
+              <ChoiceActionItem Id="Visual Studio 2013 Blue" Caption="视觉工作室 2013年蓝色" />
+              <ChoiceActionItem Id="Visual Studio 2013 Dark" Caption="视觉工作室 2013年黑暗" />
+              <ChoiceActionItem Id="Visual Studio 2013 Light" Caption="视觉工作室 2013年光" />
+              <ChoiceActionItem Id="Xmas 2008 Blue" Caption="圣诞节 2008年蓝" />
+            </ChoiceActionItems>
+          </ChoiceActionItem>
+          <ChoiceActionItem Id="Windows Theme" Caption="Windows 主题" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="CloneObject" Caption="克隆人......" />
+      <Action Id="Close" Caption="关闭" />
+      <Action Id="CopyCellValue" Caption="复制单元格的值" />
+      <Action Id="CopyModelDifference" Caption="复制模型的区别" />
+      <Action Id="CopyPredefinedReport" Caption="复制预定义的报表" />
+      <Action Id="CreateDashboard" Caption="创建仪表板" />
+      <Action Id="CreateModelDifferences" Caption="创建模式的差异" />
+      <Action Id="Delete" Caption="删除" />
+      <Action Id="Delete Item" Caption="删除项目" />
+      <Action Id="DeleteDashboard" Caption="删除仪表板" />
+      <Action Id="Deny_TypePermissionMatrixItem" Caption="否认">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="创建" />
+          <ChoiceActionItem Id="Delete" Caption="删除" />
+          <ChoiceActionItem Id="Deny All" Caption="全部拒绝" />
+          <ChoiceActionItem Id="Deny Modification" Caption="拒绝修改" />
+          <ChoiceActionItem Id="Navigate" Caption="我的详细信息" />
+          <ChoiceActionItem Id="Read" Caption="读" />
+          <ChoiceActionItem Id="Write" Caption="导航" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info" Caption="诊断" />
+      <Action Id="Diagnostic Info.Actions Info" Caption="Info.Actions 诊断信息">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Actions Info" Caption="操作信息" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info.EasyTest Control" Caption="诊断的 Info.EasyTest 控制">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="EasyTest Control" Caption="EasyTest 控制" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info.Rules Info" Caption="Info.Rules 诊断信息">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Rules Info" Caption="规则信息" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info.View Info" Caption="Info.View 诊断信息">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="View Info" Caption="查看信息" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="DialogCancel" Caption="取消" />
+      <Action Id="DialogClose" Caption="关闭" />
+      <Action Id="DialogOK" Caption="还行" />
+      <Action Id="Dismiss" Caption="解雇" />
+      <Action Id="DismissAll" Caption="全部取消" />
+      <Action Id="EditModel" Caption="编辑模型" />
+      <Action Id="EditReportControllerV2.Edit" Caption="编辑" />
+      <Action Id="ExecuteReportV2" Caption="执行报告" />
+      <Action Id="Exit" Caption="退出" />
+      <Action Id="Export" Caption="导出到" />
+      <Action Id="ExportAnalysis" Caption="出口分析" />
+      <Action Id="ExportModelDifferences" Caption="出口模式的差异" />
+      <Action Id="FullTextSearch" Caption="按文本筛选" />
+      <Action Id="Grant_TypePermissionMatrixItem" Caption="格兰特">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="创建" />
+          <ChoiceActionItem Id="Delete" Caption="删除" />
+          <ChoiceActionItem Id="Full Access" Caption="完全访问权限" />
+          <ChoiceActionItem Id="Navigate" Caption="导航" />
+          <ChoiceActionItem Id="Read" Caption="读" />
+          <ChoiceActionItem Id="Read Only Access" Caption="只读访问" />
+          <ChoiceActionItem Id="Write" Caption="导航" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="HideItemsFromDashboard" Caption="隐藏从仪表板" />
+      <Action Id="ImportData" Caption="导入数据" />
+      <Action Id="ImportSharedModelDifference" Caption="导入共享模型的区别" />
+      <Action Id="Link" Caption="链接" />
+      <Action Id="ListViewShowObject" Caption="开放" />
+      <Action Id="Logoff" Caption="注销" />
+      <Action Id="Logon" Caption="登录" />
+      <Action Id="MergeAction" Caption="合并" />
+      <Action Id="MyDetails" Caption="我的详细信息" />
+      <Action Id="NavigateBack" Caption="返回" />
+      <Action Id="NavigateForward" Caption="前进" />
+      <Action Id="New" Caption="新增功能">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="编辑后的对象是新的。" />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="下一条记录" />
+      <Action Id="Open" Caption="打开..." />
+      <Action Id="OpenObject" Caption="打开相关的记录" />
+      <Action Id="OrganizeDashboard" Caption="组织仪表板" />
+      <Action Id="PageSetup" Caption="页面设置..." ToolTip="页面设置" />
+      <Action Id="PreviewReportV2" Caption="预览" />
+      <Action Id="PreviousObject" Caption="上一条记录" />
+      <Action Id="Print" Caption="打印......" />
+      <Action Id="PrintPreview" Caption="打印预览..." />
+      <Action Id="Refresh" Caption="刷新" />
+      <Action Id="RefreshAction" Caption="刷新" />
+      <Action Id="RefreshNotifications" Caption="刷新" />
+      <Action Id="ReportViewerDialogControllerV2_Close" Caption="关闭" />
+      <Action Id="ResetModelDifferences" Caption="重置模式的差异" />
+      <Action Id="ResetPassword" Caption="重置密码" />
+      <Action Id="ResetViewSettings" Caption="重置视图设置" />
+      <Action Id="Save" Caption="保存" />
+      <Action Id="SaveAndClose" Caption="保存并关闭" />
+      <Action Id="SaveAndNew" Caption="保存并新建" />
+      <Action Id="SaveTo" Caption="另存为..." />
+      <Action Id="SetFilter" Caption="筛选器" />
+      <Action Id="ShowAllContexts" Caption="验证" />
+      <Action Id="ShowInReportV2" Caption="在报表中显示" />
+      <Action Id="ShowItemsOnDashboard" Caption="在仪表板上显示" />
+      <Action Id="ShowNavigationItem" Caption="导航" />
+      <Action Id="ShowNotificationsAction" Caption="显示通知动作" />
+      <Action Id="ShowReportDesignerV2" Caption="显示报表设计器" />
+      <Action Id="ShowToolbar" Caption="显示工具栏" />
+      <Action Id="Snooze" Caption="贪睡" />
+      <Action Id="Unlink" Caption="取消链接" />
+      <Action Id="订单操作" Caption="订单操作" ToolTip="订单操作" ShortCaption="订单操作">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="创建运单号" Caption="创建运单号" />
+          <ChoiceActionItem Id="获取运单号" Caption="获取运单号" />
+          <ChoiceActionItem Id="取消订单" Caption="取消订单" />
+          <ChoiceActionItem Id="确认订单" Caption="确认订单" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="获取顺丰运单号" Caption="获取顺丰运单号" ToolTip="获取顺丰运单号" ShortCaption="获取顺丰运单号" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="AttachmentAssigned" Caption="附件为空" />
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="需要至少一个选定的对象" />
+      <Reason Id="Security" Caption="权限被拒绝" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="Admiral.ImportData.ImportData" Caption="数据导入">
+      <OwnMembers>
+        <Member Name="Progress" Caption="进度" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Notifications.Notification">
+      <OwnMembers>
+        <Member Name="AlarmTime" Caption="报警时间" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Notifications.NotificationsObject" ObjectCaptionFormat="{0:NotificationsCount} 催复通知" />
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters">
+      <OwnMembers>
+        <Member Name="Password" Caption="密码" />
+        <Member Name="UserName" Caption="用户名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission">
+      <OwnMembers>
+        <Member Name="WriteAccess" Caption="写访问权限" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters">
+      <OwnMembers>
+        <Member Name="Password" Caption="密码" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.PermissionMatrix.TypePermissionMatrixItem">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="创建" />
+        <Member Name="AllowDelete" Caption="删除" />
+        <Member Name="AllowNavigate" Caption="我的详细信息" />
+        <Member Name="AllowWrite" Caption="导航" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemMemberPermissionsObject">
+      <OwnMembers>
+        <Member Name="AllowRead" Caption="允许读" />
+        <Member Name="AllowWrite" Caption="允许写入" />
+        <Member Name="EffectiveWrite" Caption="导航" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemObjectPermissionsObject">
+      <OwnMembers>
+        <Member Name="AllowDelete" Caption="允许删除" />
+        <Member Name="AllowNavigate" Caption="允许导航" />
+        <Member Name="AllowRead" Caption="允许读" />
+        <Member Name="AllowWrite" Caption="允许写入" />
+        <Member Name="EffectiveDelete" Caption="删除" />
+        <Member Name="EffectiveNavigate" Caption="我的详细信息" />
+        <Member Name="EffectiveWrite" Caption="导航" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole">
+      <OwnMembers>
+        <Member Name="ParentRoles" Caption="父角色" />
+        <Member Name="Users" Caption="用户" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionsObjectBase">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="创建" />
+        <Member Name="AllowDelete" Caption="删除" />
+        <Member Name="AllowNavigate" Caption="我的详细信息" />
+        <Member Name="AllowWrite" Caption="导航" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser" Caption="用户" />
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase">
+      <OwnMembers>
+        <Member Name="UserName" Caption="用户名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo">
+      <OwnMembers>
+        <Member Name="Version" Caption="版本" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo">
+      <OwnMembers>
+        <Member Name="ViewItems" Caption="查看项目" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizationItem">
+      <OwnMembers>
+        <Member Name="Visibility" Caption="可见性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizer">
+      <OwnMembers>
+        <Member Name="ViewItems" Caption="查看项目" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardViewItemDescriptor">
+      <OwnMembers>
+        <Member Name="ViewCaption" Caption="查看标题" />
+        <Member Name="ViewDescription" Caption="查看描述" />
+        <Member Name="ViewId" Caption="视图 Id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem">
+      <OwnMembers>
+        <Member Name="Preview" Caption="预览" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="视图">
+      <OwnMembers>
+        <Member Name="ViewDescriptor" Caption="视图" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem" Caption="验证的详细信息">
+      <OwnMembers>
+        <Member Name="Rule" Caption="规则" />
+        <Member Name="RuleName" Caption="规则名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="验证结果" />
+    <Class Name="DevExpress.Persistent.BaseImpl.HCategory">
+      <OwnMembers>
+        <Member Name="Parent" Caption="父" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.ModelDifference">
+      <OwnMembers>
+        <Member Name="UserName" Caption="用户名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2">
+      <OwnMembers>
+        <Member Name="ParametersObjectType" Caption="参数对象类型" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties" Caption="规则基本属性" />
+    <Class Name="DevExpress.Persistent.Validation.IRuleCollectionPropertyProperties" Caption="规则集合属性属性" />
+    <Class Name="DevExpress.Persistent.Validation.IRuleCombinationOfPropertiesIsUniqueProperties" Caption="属性的规则组合是唯一的属性" />
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties" Caption="规则的标准属性">
+      <OwnMembers>
+        <Member Name="UsedProperties" Caption="使用的属性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleFromBoolPropertyProperties" Caption="Bool 属性属性的规则">
+      <OwnMembers>
+        <Member Name="UsedProperties" Caption="使用的属性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleIsReferencedProperties" Caption="规则引用属性" />
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties" Caption="规则对象存在属性" />
+    <Class Name="DevExpress.Persistent.Validation.IRuleRegularExpressionProperties">
+      <OwnMembers>
+        <Member Name="Pattern" Caption="模式" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties" Caption="规则基本属性" />
+    <Class Name="DevExpress.Persistent.Validation.RuleCombinationOfPropertiesIsUniqueProperties" Caption="属性的规则组合是唯一的属性" />
+    <Class Name="DevExpress.Persistent.Validation.RuleCriteriaProperties" Caption="规则的标准属性">
+      <OwnMembers>
+        <Member Name="UsedProperties" Caption="使用的属性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleFromBoolPropertyProperties" Caption="Bool 属性属性的规则">
+      <OwnMembers>
+        <Member Name="UsedProperties" Caption="使用的属性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleIsReferencedProperties" Caption="规则引用属性" />
+    <Class Name="DevExpress.Persistent.Validation.RuleObjectExistsProperties" Caption="规则对象存在属性" />
+    <Class Name="DevExpress.Persistent.Validation.RuleRegularExpressionProperties">
+      <OwnMembers>
+        <Member Name="Pattern" Caption="模式" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult" Caption="Validaton 结果" />
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem" Caption="验证的详细信息">
+      <OwnMembers>
+        <Member Name="Rule" Caption="规则" />
+        <Member Name="RuleName" Caption="规则名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItemAggregate">
+      <OwnMembers>
+        <Member Name="AggregatedResults" Caption="聚合的结果" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Xpo.PersistentBase" Caption="永久基地" />
+    <Class Name="DevExpress.Xpo.XPObjectType" Caption="XPObject Type" />
+    <Class Name="SkyFaith.Module.BusinessObjects.顺丰订单管理.Cargo" Caption="货物">
+      <OwnMembers>
+        <Member Name="amount" Caption="货物单价" />
+        <Member Name="count" Caption="货物数量" />
+        <Member Name="name" Caption="货物名称" />
+        <Member Name="unit" Caption="货物单位" />
+        <Member Name="weight" Caption="订单货物单位重量" />
+      </OwnMembers>
+    </Class>
+    <Class Name="SkyFaith.Module.BusinessObjects.顺丰订单管理.Order" Caption="订单">
+      <OwnMembers>
+        <Member Name="Cargos" Caption="订单货物" />
+        <Member Name="d_address" Caption="到件方详细地址" />
+        <Member Name="d_city" Caption="到件方所在城市名称" />
+        <Member Name="d_company" Caption="到件方公司名称" />
+        <Member Name="d_contact" Caption="到件方联系人" />
+        <Member Name="d_country" Caption="到方国家" />
+        <Member Name="d_county" Caption="到件方所在县/区" />
+        <Member Name="d_deliverycode" Caption="到件方代码" />
+        <Member Name="d_post_code" Caption="到方邮编" />
+        <Member Name="d_province" Caption="到件方所在省份" />
+        <Member Name="d_tel" Caption="到件方联系电话" />
+        <Member Name="j_address" Caption="寄件方详细地址" />
+        <Member Name="j_city" Caption="寄件方所在城市名称" />
+        <Member Name="j_company" Caption="寄件方公司名称" />
+        <Member Name="j_contact" Caption="寄件方联系人" />
+        <Member Name="j_country" Caption="寄方国家" />
+        <Member Name="j_county" Caption="寄件人所在县/区" />
+        <Member Name="j_post_code" Caption="寄方邮编" />
+        <Member Name="j_province" Caption="寄件方所在省份" />
+        <Member Name="j_shippercode" Caption="寄件方国家/城市代码" />
+        <Member Name="j_tel" Caption="寄件方联系电话" />
+        <Member Name="mailno" Caption="顺丰运单号" />
+        <Member Name="orderid" Caption="订单号" />
+        <Member Name="pay_method" Caption="付款方式" />
+      </OwnMembers>
+    </Class>
+    <Class Name="SkyFaith.Module.BusinessObjects.鞋标签打印.产品信息" Caption="产品信息">
+      <OwnMembers>
+        <Member Name="货号" Caption="货号" />
+        <Member Name="京东码" Caption="京东码" />
+        <Member Name="旧京东码" Caption="旧京东码" />
+        <Member Name="条形码" Caption="条形码" />
+        <Member Name="图片" Caption="图片" />
+        <Member Name="鞋图名称" Caption="鞋图名称" />
+        <Member Name="颜色" Caption="颜色" />
+        <Member Name="英文名称" Caption="英文名称" />
+        <Member Name="英文颜色" Caption="英文颜色" />
+        <Member Name="中文名称" Caption="中文名称" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <CreatableItems>
+    <CreatableItem ClassName="SkyFaith.Module.BusinessObjects.顺丰订单管理.Cargo" Caption="货物" />
+    <CreatableItem ClassName="SkyFaith.Module.BusinessObjects.顺丰订单管理.Order" Caption="订单" />
+  </CreatableItems>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="AllFiles" Value="所有文件" />
+      <LocalizationItem Name="DiagnosticChildWindowAddition" Value="（子窗口）" />
+      <LocalizationItem Name="ReportDesignerWarning" Value="警告" />
+      <LocalizationItem Name="View" Value="视图" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Controls">
+      <LocalizationGroup Name="DevExpress.Printing">
+        <LocalizationItem Name="Button_Apply" Value="应用" />
+        <LocalizationItem Name="ExportOption_ConfirmPermissionsPasswordForm_Name" Value="与权限密码︰" />
+        <LocalizationItem Name="ExportOption_ConfirmPermissionsPasswordForm_Note" Value="请确认权限密码。一定要记下该密码。你会需要它在将来更改这些设置。" />
+        <LocalizationItem Name="ExportOption_HtmlPageBorderColor" Value="页面边框颜色︰" />
+        <LocalizationItem Name="ExportOption_HtmlPageRange" Value="页面范围︰" />
+        <LocalizationItem Name="ExportOption_ImagePageBorderColor" Value="页面边框颜色︰" />
+        <LocalizationItem Name="ExportOption_ImagePageBorderWidth" Value="页面边框宽度︰" />
+        <LocalizationItem Name="ExportOption_ImagePageRange" Value="页面范围︰" />
+        <LocalizationItem Name="ExportOption_PdfPageRange" Value="页面范围︰" />
+        <LocalizationItem Name="ExportOption_PdfPasswordSecurityOptions" Value="密码安全︰" />
+        <LocalizationItem Name="ExportOption_PdfPasswordSecurityOptions_None" Value="（无）" />
+        <LocalizationItem Name="ExportOption_PdfPasswordSecurityOptions_Permissions" Value="权限" />
+        <LocalizationItem Name="ExportOption_PdfSignatureOptions_None" Value="（无）" />
+        <LocalizationItem Name="ExportOption_RtfPageRange" Value="页面范围︰" />
+        <LocalizationItem Name="ExportOption_XlsPageRange" Value="页面范围︰" />
+        <LocalizationItem Name="ExportOption_XlsxPageRange" Value="页面范围︰" />
+        <LocalizationItem Name="ExportOption_XpsPageRange" Value="页面范围︰" />
+        <LocalizationItem Name="ExportOptionsForm_CaptionRtf" Value="Rtf 格式导出选项" />
+        <LocalizationItem Name="MenuItem_Copy" Value="副本" />
+        <LocalizationItem Name="MenuItem_Export" Value="&amp; 导出到" />
+        <LocalizationItem Name="MenuItem_PageLayout" Value="与页面布局" />
+        <LocalizationItem Name="MenuItem_PageSetup" Value="页面集 &amp; 最多......" />
+        <LocalizationItem Name="MenuItem_PdfDocument" Value="PDF 文件" />
+        <LocalizationItem Name="MenuItem_Print" Value="与打印......" />
+        <LocalizationItem Name="MenuItem_RtfDocument" Value="RTF 文件" />
+        <LocalizationItem Name="MenuItem_View" Value="与视图" />
+        <LocalizationItem Name="Msg_NoDifferentFilesInStream" Value="文档无法导出到一个流中的 DifferentFiles 模式。而是使用 SingleFile 或 SingleFilePageByPage 的模式。" />
+        <LocalizationItem Name="NoneString" Value="（无）" />
+        <LocalizationItem Name="PageInfo_PageDate" Value="[打印日期]" />
+        <LocalizationItem Name="PageInfo_PageNumber" Value="[页 #]" />
+        <LocalizationItem Name="PageInfo_PageNumberOfTotal" Value="[页的页 # #]" />
+        <LocalizationItem Name="PageInfo_PageTime" Value="[打印时间]" />
+        <LocalizationItem Name="PageInfo_PageTotal" Value="[页 #]" />
+        <LocalizationItem Name="PageInfo_PageUserName" Value="[用户名]" />
+        <LocalizationItem Name="ParametersRequest_Caption" Value="参数" />
+        <LocalizationItem Name="PrinterStatus_PagePunt" Value="页面有问题发生。" />
+        <LocalizationItem Name="PrinterStatus_PaperProblem" Value="出现了与本文有关的问题。" />
+        <LocalizationItem Name="PrinterStatus_UserIntervention" Value="发生了用户干预。" />
+        <LocalizationItem Name="RibbonPreview_ClosePreview_Caption" Value="关闭" />
+        <LocalizationItem Name="RibbonPreview_ClosePreview_STipContent" Value="关闭文档的打印预览。" />
+        <LocalizationItem Name="RibbonPreview_ClosePreview_STipTitle" Value="关闭打印预览" />
+        <LocalizationItem Name="RibbonPreview_ExportPdf_Caption" Value="PDF 文件" />
+        <LocalizationItem Name="RibbonPreview_ExportPdf_Description" Value="Adobe 可移植文档格式" />
+        <LocalizationItem Name="RibbonPreview_ExportRtf_Caption" Value="RTF 文件" />
+        <LocalizationItem Name="RibbonPreview_ExportTxt_Description" Value="纯文本" />
+        <LocalizationItem Name="RibbonPreview_PageGroup_Background" Value="页面背景" />
+        <LocalizationItem Name="RibbonPreview_PageGroup_Close" Value="关闭" />
+        <LocalizationItem Name="RibbonPreview_PageGroup_PageSetup" Value="页面设置" />
+        <LocalizationItem Name="RibbonPreview_PageGroup_PageSetup_STipTitle" Value="页面设置" />
+        <LocalizationItem Name="RibbonPreview_PageSetup_STipTitle" Value="页面设置" />
+        <LocalizationItem Name="RibbonPreview_Parameters_Caption" Value="参数" />
+        <LocalizationItem Name="RibbonPreview_Parameters_STipTitle" Value="参数" />
+        <LocalizationItem Name="RibbonPreview_SendPdf_Caption" Value="PDF 文件" />
+        <LocalizationItem Name="RibbonPreview_SendPdf_Description" Value="Adobe 可移植文档格式" />
+        <LocalizationItem Name="RibbonPreview_SendRtf_Caption" Value="RTF 文件" />
+        <LocalizationItem Name="RibbonPreview_SendTxt_Description" Value="纯文本" />
+        <LocalizationItem Name="SaveDlg_FilterXls" Value="XLS 文档" />
+        <LocalizationItem Name="SaveDlg_FilterXlsx" Value="兑换 XLSX 文件" />
+        <LocalizationItem Name="SaveDlg_FilterXps" Value="XPS 文档" />
+        <LocalizationItem Name="SaveDlg_Title" Value="另存为" />
+        <LocalizationItem Name="SB_PageOfPagesHint" Value="在文档中的页码。单击以打开转到页面对话框。" />
+        <LocalizationItem Name="ScalePopup_AdjustTo" Value="调整到" />
+        <LocalizationItem Name="Shapes_Pentagon" Value="五角大楼" />
+        <LocalizationItem Name="TB_TTip_Close" Value="关闭预览" />
+        <LocalizationItem Name="TB_TTip_PageSetup" Value="页面设置" />
+        <LocalizationItem Name="TB_TTip_Parameters" Value="参数" />
+        <LocalizationItem Name="WatermarkTypePicture" Value="（图片）" />
+        <LocalizationItem Name="WatermarkTypeText" Value="（文本）" />
+        <LocalizationItem Name="WMForm_VertAlign_Top" Value="工具" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Reports">
+        <LocalizationItem Name="CatParameters" Value="参数" />
+        <LocalizationItem Name="Cmd_AddStyle" Value="添加样式" />
+        <LocalizationItem Name="Cmd_Delete" Value="与删除" />
+        <LocalizationItem Name="Cmd_DeleteFormattingRule" Value="删除" />
+        <LocalizationItem Name="Cmd_DeleteStyle" Value="删除" />
+        <LocalizationItem Name="Cmd_Paste" Value="与粘贴" />
+        <LocalizationItem Name="Cmd_PurgeFormattingRules" Value="删除未使用的格式设置规则" />
+        <LocalizationItem Name="Cmd_PurgeStyles" Value="删除未使用的样式" />
+        <LocalizationItem Name="Cmd_RtfClear" Value="明确" />
+        <LocalizationItem Name="Cmd_SendToBack" Value="与发送回" />
+        <LocalizationItem Name="FRSForm_TTip_ClearRules" Value="明确的格式设置规则" />
+        <LocalizationItem Name="FRSForm_TTip_PurgeRules" Value="删除未使用的格式设置规则" />
+        <LocalizationItem Name="GroupSort_Delete" Value="删除" />
+        <LocalizationItem Name="Msg_ApplyChangesQuestion" Value="你确定你想要应用这些更改？" />
+        <LocalizationItem Name="Msg_GroupSortNoDataSource" Value="若要添加新的分组或排序级别，第一次为报告提供数据源。" />
+        <LocalizationItem Name="Msg_ParameterBindingValueTypeMismatch" Value="参数绑定将不兼容的类型的值分配给子报表参数 &quot;{0}&quot;." />
+        <LocalizationItem Name="Msg_WarningRemoveCalculatedFields" Value="此操作将删除所有计算的字段从数据的所有表。你希望继续吗？" />
+        <LocalizationItem Name="Msg_WarningRemoveFormattingRules" Value="此操作将删除所有格式规则。你希望继续吗？" />
+        <LocalizationItem Name="Msg_WarningRemoveParameters" Value="此操作将删除所有参数。你希望继续吗？" />
+        <LocalizationItem Name="Msg_WarningRemoveStyles" Value="此操作将删除所有样式。你希望继续吗？" />
+        <LocalizationItem Name="PivotGridForm_ItemAppearances_Description" Value="调整当前的 XRPivotGrid 的打印外观。" />
+        <LocalizationItem Name="PivotGridForm_ItemSettings_Description" Value="调整当前的 XRPivotGrid 的打印设置。" />
+        <LocalizationItem Name="RibbonXRDesign_AlignBottom_Caption" Value="底端对齐" />
+        <LocalizationItem Name="RibbonXRDesign_AlignBottom_STipTitle" Value="底端对齐" />
+        <LocalizationItem Name="RibbonXRDesign_AlignHorizontalCenters_Caption" Value="中间对齐" />
+        <LocalizationItem Name="RibbonXRDesign_AlignHorizontalCenters_STipTitle" Value="中间对齐" />
+        <LocalizationItem Name="RibbonXRDesign_AlignLeft_Caption" Value="左对齐" />
+        <LocalizationItem Name="RibbonXRDesign_AlignLeft_STipTitle" Value="左对齐" />
+        <LocalizationItem Name="RibbonXRDesign_AlignVerticalCenters_Caption" Value="居中对齐" />
+        <LocalizationItem Name="RibbonXRDesign_AlignVerticalCenters_STipTitle" Value="居中对齐" />
+        <LocalizationItem Name="RibbonXRDesign_BringToFront_STipContent" Value="将选定的控件放到前面。" />
+        <LocalizationItem Name="RibbonXRDesign_Close_Caption" Value="关闭" />
+        <LocalizationItem Name="RibbonXRDesign_Close_STipContent" Value="关闭当前的报表。" />
+        <LocalizationItem Name="RibbonXRDesign_Close_STipTitle" Value="关闭" />
+        <LocalizationItem Name="RibbonXRDesign_Copy_Caption" Value="副本" />
+        <LocalizationItem Name="RibbonXRDesign_Copy_STipTitle" Value="副本" />
+        <LocalizationItem Name="RibbonXRDesign_PageGroup_Alignment" Value="对齐方式" />
+        <LocalizationItem Name="RibbonXRDesign_Paste_Caption" Value="选择性粘贴" />
+        <LocalizationItem Name="RibbonXRDesign_Paste_STipContent" Value="路径" />
+        <LocalizationItem Name="RibbonXRDesign_Paste_STipTitle" Value="选择性粘贴" />
+        <LocalizationItem Name="ScriptEditor_NewString" Value="（新）" />
+        <LocalizationItem Name="ScriptEditor_ScriptsAreValid" Value="所有脚本都是有效的。" />
+        <LocalizationItem Name="SSForm_Btn_Close" Value="关闭" />
+        <LocalizationItem Name="SSForm_TTip_PurgeStyles" Value="删除未使用的样式" />
+        <LocalizationItem Name="UD_Capt_Copy" Value="与复制" />
+        <LocalizationItem Name="UD_Capt_Delete" Value="与删除" />
+        <LocalizationItem Name="UD_Capt_NewReport" Value="与新" />
+        <LocalizationItem Name="UD_Capt_OpenFile" Value="与打开......" />
+        <LocalizationItem Name="UD_Capt_OrderSendToBack" Value="与发送回" />
+        <LocalizationItem Name="UD_Capt_Paste" Value="与粘贴" />
+        <LocalizationItem Name="UD_Capt_Redo" Value="与重做" />
+        <LocalizationItem Name="UD_Capt_SaveFile" Value="与保存" />
+        <LocalizationItem Name="UD_Capt_SpacingRemove" Value="与删除" />
+        <LocalizationItem Name="UD_Group_Edit" Value="与编辑" />
+        <LocalizationItem Name="UD_Group_Order" Value="与顺序" />
+        <LocalizationItem Name="UD_Group_View" Value="与视图" />
+        <LocalizationItem Name="UD_Hint_Cut" Value="删除控件并将其复制到剪贴板" />
+        <LocalizationItem Name="UD_Hint_Delete" Value="删除控件" />
+        <LocalizationItem Name="UD_Hint_Exit" Value="关闭设计器" />
+        <LocalizationItem Name="UD_Hint_OrderBringToFront" Value="将选定的控件放到前面" />
+        <LocalizationItem Name="UD_Hint_Paste" Value="从剪贴板中添加控件" />
+        <LocalizationItem Name="UD_PropertyGrid_NotSetText" Value="（未设置）" />
+        <LocalizationItem Name="UD_TTip_AlignBottom" Value="底端对齐" />
+        <LocalizationItem Name="UD_TTip_AlignHorizontalCenters" Value="中间对齐" />
+        <LocalizationItem Name="UD_TTip_AlignLeft" Value="左对齐" />
+        <LocalizationItem Name="UD_TTip_AlignTop" Value="顶端对齐" />
+        <LocalizationItem Name="UD_TTip_AlignVerticalCenters" Value="居中对齐" />
+        <LocalizationItem Name="UD_TTip_EditCopy" Value="副本" />
+        <LocalizationItem Name="UD_TTip_EditPaste" Value="选择性粘贴" />
+        <LocalizationItem Name="UD_TTip_FormatAlignLeft" Value="左对齐" />
+        <LocalizationItem Name="UD_TTip_FormatAlignRight" Value="右对齐" />
+        <LocalizationItem Name="Verb_Delete" Value="删除..." />
+        <LocalizationItem Name="Verb_RTFClear" Value="明确" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraBars">
+        <LocalizationItem Name="BarAllItems" Value="（所有项目）" />
+        <LocalizationItem Name="BarUnassignedItems" Value="（未分配的项目）" />
+        <LocalizationItem Name="CloseButton" Value="关闭" />
+        <LocalizationItem Name="MenuAnimationSystem" Value="（系统默认值）" />
+        <LocalizationItem Name="NewToolbarName" Value="工具" />
+        <LocalizationItem Name="ResetBar" Value="是否确实要重置所做的更改 '{0}' 工具栏？" />
+        <LocalizationItem Name="RibbonAllPages" Value="（所有页面）" />
+        <LocalizationItem Name="RibbonCustomizationOptionAllCommands" Value="所有命令" />
+        <LocalizationItem Name="RibbonCustomizationOptionAllTabs" Value="所有选项卡" />
+        <LocalizationItem Name="RibbonGalleryFilter" Value="所有组" />
+        <LocalizationItem Name="RibbonToolbarRemove" Value="与从快速访问工具栏中删除" />
+        <LocalizationItem Name="RibbonUnassignedPages" Value="（未分配的页）" />
+        <LocalizationItem Name="SkinCaptions" Value="|DevExpress 风格 |焦糖 |钱双胞胎 |DevExpress 黑暗风格 | 虚构 |莉莲 |黑色 |蓝色 |Office 2010 蓝色 |Office 2010 黑色 |Office 2010 银 |Office 2007 蓝色 |Office 2007 黑 |Office 2007 银 |Office 2007 绿色 |Office 2007 粉红色 |七 |七个经典 |暗室 |McSkin |锋利 |再加上锋利 |有雾 |黑暗的一面 |圣诞节 （蓝色） |春天 |夏季 |南瓜 |情人节 |星尘 |咖啡 |玻璃海洋 |高对比度 |液体的天空 |伦敦液体天空 |沥青世界 |蓝图 |Whiteprint |Visual Studio 2010 |大都市 |大都市黑暗 |办公室 2013年白 |办公室 2013年暗灰 |办公室 2013年浅灰色 |视觉工作室 2013年蓝色 |视觉工作室 2013年黑暗 |视觉工作室 2013年光 |多彩的办公室 2016年 |办公室 2016年黑暗 |" />
+        <LocalizationItem Name="ToolBarMenu" Value="重置的 $&amp; 删除 $ &amp; ！ &amp; 名称 $！损失率 &amp; lt 风格 $&amp; 仅文本 （始终） $Text &amp; （在菜单中仅） $Image &amp; 和文本 $！开始一 &amp; 组 $&amp; 可见 $&amp; 大多数最近使用过的" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraBars.Docking">
+        <LocalizationItem Name="CommandClose" Value="关闭" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraBars.Docking2010">
+        <LocalizationItem Name="CloseAllDocumentsButtonText" Value="请关闭所有文档" />
+        <LocalizationItem Name="CloseAllDocumentsWarningMessage" Value="你确定你想要关闭所有的文档？" />
+        <LocalizationItem Name="CloseDocumentButtonText" Value="关闭文档" />
+        <LocalizationItem Name="CloseDocumentWarningMessage" Value="是否确实要关闭 {0} 文档吗？" />
+        <LocalizationItem Name="CommandClose" Value="关闭" />
+        <LocalizationItem Name="CommandCloseAll" Value="请关闭所有文档" />
+        <LocalizationItem Name="CommandCloseAllButPinned" Value="关闭所有但固定" />
+        <LocalizationItem Name="CommandCloseAllButThis" Value="关闭所有但这" />
+        <LocalizationItem Name="OpenedWindowsDialogPathColumnCaption" Value="路径" />
+        <LocalizationItem Name="RemoveAllWorkspacesWarningMessage" Value="你确定你想要删除的所有工作区？" />
+        <LocalizationItem Name="WorkspaceRemoveWarningMessage" Value="是否确实要删除 {0} 工作区？" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraEditors">
+        <LocalizationItem Name="Apply" Value="应用" />
+        <LocalizationItem Name="DateEditClear" Value="明确" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionAddTicks" Value="添加刻度" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionAddTimeSpan" Value="添加时间跨度" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionAddYears" Value="添加年" />
+        <LocalizationItem Name="FilterMenuClearAll" Value="全部清除" />
+        <LocalizationItem Name="FilterShowAll" Value="（选择所有）" />
+        <LocalizationItem Name="FilterToolTipElementAdd" Value="将新项添加到列表中" />
+        <LocalizationItem Name="FilterToolTipKeysAdd" Value="（使用插入或添加密钥）" />
+        <LocalizationItem Name="FilterToolTipKeysRemove" Value="（使用 Delete 或减去键）" />
+        <LocalizationItem Name="FilterToolTipNodeAdd" Value="向此组添加一个新的情况" />
+        <LocalizationItem Name="FormatRuleMenuItemClearAllRules" Value="清除所有列的规则" />
+        <LocalizationItem Name="FormatRuleMenuItemClearRules" Value="明确的规则" />
+        <LocalizationItem Name="FormatRuleMenuItemDateOccurring" Value="发生日期" />
+        <LocalizationItem Name="ImagePopupEmpty" Value="（空）" />
+        <LocalizationItem Name="ImagePopupPicture" Value="（图片）" />
+        <LocalizationItem Name="LookUpEditValueIsNull" Value="[EditValue 是空的？" />
+        <LocalizationItem Name="ManageRuleAllColumns" Value="（全部）" />
+        <LocalizationItem Name="ManageRuleCommonPercent" Value="%" />
+        <LocalizationItem Name="ManageRuleDeleteRule" Value="删除规则" />
+        <LocalizationItem Name="ManageRuleFormatCellsClear" Value="明确" />
+        <LocalizationItem Name="ManageRuleGridCaptionRule" Value="规则" />
+        <LocalizationItem Name="ManageRuleRankedValuesTop" Value="工具" />
+        <LocalizationItem Name="NavigatorRemoveButtonHint" Value="删除" />
+        <LocalizationItem Name="PictureEditMenuCopy" Value="副本" />
+        <LocalizationItem Name="PictureEditMenuDelete" Value="删除" />
+        <LocalizationItem Name="PictureEditMenuPaste" Value="选择性粘贴" />
+        <LocalizationItem Name="PictureEditOpenFileFilter" Value="位图文件 （应用） | *.bmp |图形交换格式 (*.gif) | *.gif |JPEG 文件交换格式 （*.jpg; *.jpeg） | *.jpg; *.jpeg |图标文件 (*.ico) | *.ico |可移植网络图形格式 (*.png) | *.png |所有图片文件 | *.bmp; *.gif; *.jpg; *.jpeg; *.ico; *.png; *.tif |所有文件 | *.*" />
+        <LocalizationItem Name="PictureEditSaveFileFilter" Value="位图文件 （应用） | *.bmp |图形交换格式 (*.gif) | *.gif |JPEG 文件交换格式 jpg | *.jpg |可移植网络图形格式 (*.png) | *.png" />
+        <LocalizationItem Name="TabHeaderButtonClose" Value="关闭" />
+        <LocalizationItem Name="TextEditMenuDelete" Value="删除" />
+        <LocalizationItem Name="TextEditMenuPaste" Value="粘贴" />
+        <LocalizationItem Name="XtraMessageBoxCancelButtonText" Value="取消" />
+        <LocalizationItem Name="XtraMessageBoxIgnoreButtonText" Value="忽略" />
+        <LocalizationItem Name="XtraMessageBoxNoButtonText" Value="否" />
+        <LocalizationItem Name="XtraMessageBoxOkButtonText" Value="确定" />
+        <LocalizationItem Name="XtraMessageBoxRetryButtonText" Value="重试" />
+        <LocalizationItem Name="XtraMessageBoxYesButtonText" Value="是" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraGrid">
+        <LocalizationItem Name="CustomFilterDialogCancelButton" Value="取消" />
+        <LocalizationItem Name="CustomFilterDialogEmptyOperator" Value="（选择一个运算符）" />
+        <LocalizationItem Name="CustomFilterDialogEmptyValue" Value="（输入值）" />
+        <LocalizationItem Name="CustomFilterDialogOkButton" Value="确定" />
+        <LocalizationItem Name="FilterBuilderCancelButton" Value="取消" />
+        <LocalizationItem Name="FilterBuilderOkButton" Value="确定" />
+        <LocalizationItem Name="FindControlClearButton" Value="明确" />
+        <LocalizationItem Name="LayoutViewButtonCancel" Value="取消" />
+        <LocalizationItem Name="LayoutViewButtonOk" Value="确定" />
+        <LocalizationItem Name="LayoutViewButtonReset" Value="重置模板卡 &amp;" />
+        <LocalizationItem Name="LayoutViewLabelAllowFieldHotTracking" Value="允许热跟踪" />
+        <LocalizationItem Name="LayoutViewPanBtnHint" Value="平移" />
+        <LocalizationItem Name="MenuColumnClearAllSorting" Value="清除所有排序" />
+        <LocalizationItem Name="MenuColumnClearFilter" Value="清除筛选器" />
+        <LocalizationItem Name="MenuGroupPanelClearGrouping" Value="明确的分组" />
+        <LocalizationItem Name="PopupFilterAll" Value="（全部）" />
+        <LocalizationItem Name="PopupFilterBlanks" Value="（空白）" />
+        <LocalizationItem Name="PopupFilterCustom" Value="（自定义）" />
+        <LocalizationItem Name="PopupFilterNonBlanks" Value="（非空白）" />
+        <LocalizationItem Name="SearchLookUpMissingRows" Value="若要显示所有行，请按 enter 键或单击查找。&#xD;&#xA;若要搜索的行，键入搜索字符串并按 enter 键或单击查找。" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraLayout">
+        <LocalizationItem Name="AddTabMenuText" Value="添加选项卡" />
+        <LocalizationItem Name="DeleteTemplateText" Value="删除" />
+        <LocalizationItem Name="TextPositionTopMenuText" Value="工具" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraRichEdit">
+        <LocalizationItem Name="Caption_EmptyParentStyle" Value="（基础属性）" />
+        <LocalizationItem Name="Caption_FirstLineIndentNone" Value="（无）" />
+        <LocalizationItem Name="Caption_GroupTableAlignment" Value="对齐方式" />
+        <LocalizationItem Name="Caption_GroupTableRowsAndColumns" Value="行 &amp; &amp; 列" />
+        <LocalizationItem Name="Caption_UnitPercent" Value="%" />
+        <LocalizationItem Name="ClearFormatting" Value="清除格式" />
+        <LocalizationItem Name="FieldMapAddress1" Value="地址 1" />
+        <LocalizationItem Name="FieldMapAddress2" Value="地址 2" />
+        <LocalizationItem Name="FieldMapAddress3" Value="地址 3" />
+        <LocalizationItem Name="FileFilterDescription_AllFiles" Value="所有文件" />
+        <LocalizationItem Name="FileFilterDescription_AllSupportedFiles" Value="所有受支持的文件" />
+        <LocalizationItem Name="FloatingObjectLayoutOptionsForm_VerticalPositionAlignmentTop" Value="工具" />
+        <LocalizationItem Name="FloatingObjectLayoutOptionsForm_VerticalPositionTypeParagraph" Value="第段" />
+        <LocalizationItem Name="KeyName_Alt" Value="Alt 键" />
+        <LocalizationItem Name="MenuCmd_AddParagraphsToTableOfContents" Value="添加文本" />
+        <LocalizationItem Name="MenuCmd_AddParagraphsToTableOfContentsDescription" Value="将当前段落添加为内容表中的条目。" />
+        <LocalizationItem Name="MenuCmd_AddSpacingAfterParagraph" Value="添加空间与后段" />
+        <LocalizationItem Name="MenuCmd_AddSpacingBeforeParagraph" Value="添加空间 &amp; 段前" />
+        <LocalizationItem Name="MenuCmd_AddWordToDictionary" Value="添加到词典" />
+        <LocalizationItem Name="MenuCmd_AddWordToDictionaryDescription" Value="添加到词典" />
+        <LocalizationItem Name="MenuCmd_ChangeCurrentBorderRepositoryItemColor" Value="绘图笔颜色" />
+        <LocalizationItem Name="MenuCmd_ChangeMistakenWord" Value="（无拼写建议）" />
+        <LocalizationItem Name="MenuCmd_ChangeMistakenWordDescription" Value="（无拼写建议）" />
+        <LocalizationItem Name="MenuCmd_ChangeTableCellAlignmentPlaceholder" Value="对齐方式" />
+        <LocalizationItem Name="MenuCmd_ClearFormatting" Value="清除格式" />
+        <LocalizationItem Name="MenuCmd_ClearFormattingDescription" Value="清除所有所选内容格式，只留下纯文本。" />
+        <LocalizationItem Name="MenuCmd_ClosePageHeaderFooter" Value="关闭页眉和页脚" />
+        <LocalizationItem Name="MenuCmd_CopySelection" Value="副本" />
+        <LocalizationItem Name="MenuCmd_Delete" Value="删除" />
+        <LocalizationItem Name="MenuCmd_DeleteAllComments" Value="删除所有批注" />
+        <LocalizationItem Name="MenuCmd_DeleteAllCommentsDescription" Value="删除所有批注。" />
+        <LocalizationItem Name="MenuCmd_DeleteAllCommentsShown" Value="删除所有显示的批注" />
+        <LocalizationItem Name="MenuCmd_DeleteAllCommentsShownDescription" Value="删除所有显示的批注。" />
+        <LocalizationItem Name="MenuCmd_DeleteBookmark" Value="删除书签" />
+        <LocalizationItem Name="MenuCmd_DeleteBookmarkDescription" Value="删除书签" />
+        <LocalizationItem Name="MenuCmd_DeleteComment" Value="删除" />
+        <LocalizationItem Name="MenuCmd_DeleteCommentDescription" Value="删除所选的批注。" />
+        <LocalizationItem Name="MenuCmd_DeleteDescription" Value="删除" />
+        <LocalizationItem Name="MenuCmd_DeleteOneComment" Value="删除注释" />
+        <LocalizationItem Name="MenuCmd_DeleteOneCommentDescription" Value="删除所选的批注。" />
+        <LocalizationItem Name="MenuCmd_DeleteRepeatedWord" Value="删除重复的单词" />
+        <LocalizationItem Name="MenuCmd_DeleteRepeatedWordDescription" Value="删除重复的单词" />
+        <LocalizationItem Name="MenuCmd_DeleteTable" Value="删除表" />
+        <LocalizationItem Name="MenuCmd_DeleteTableCells" Value="删除单元格..." />
+        <LocalizationItem Name="MenuCmd_DeleteTableCellsDescription" Value="删除行、 列或单元格。" />
+        <LocalizationItem Name="MenuCmd_DeleteTableCellsMenuItem" Value="删除单元格..." />
+        <LocalizationItem Name="MenuCmd_DeleteTableColumns" Value="删除列" />
+        <LocalizationItem Name="MenuCmd_DeleteTableColumnsDescription" Value="删除列" />
+        <LocalizationItem Name="MenuCmd_DeleteTableDescription" Value="删除整个表。" />
+        <LocalizationItem Name="MenuCmd_DeleteTableElements" Value="删除" />
+        <LocalizationItem Name="MenuCmd_DeleteTableElementsDescription" Value="删除行、 列、 单元格或整个表格。" />
+        <LocalizationItem Name="MenuCmd_DeleteTableRows" Value="删除行" />
+        <LocalizationItem Name="MenuCmd_DeleteTableRowsDescription" Value="删除行" />
+        <LocalizationItem Name="MenuCmd_DeleteTableStyle" Value="删除表样式..." />
+        <LocalizationItem Name="MenuCmd_FitHeightDescription" Value="调整文档的缩放因子来编辑表面尺寸使整个页面高度。" />
+        <LocalizationItem Name="MenuCmd_FitToPageDescription" Value="调整文档的缩放因子，以适应整个页面编辑表面尺寸。" />
+        <LocalizationItem Name="MenuCmd_FitWidthDescription" Value="调整文档的缩放因子，以适应整个页面宽度对编辑的表面尺寸。" />
+        <LocalizationItem Name="MenuCmd_FloatingObjectBringForwardDescription" Value="提出将所选的对象，因此，它被隐藏了更少的对象，是在它的前面。" />
+        <LocalizationItem Name="MenuCmd_FloatingObjectBringForwardPlaceholderDescription" Value="提出将所选的对象，因此，它被隐藏了更少的对象，是在它的前面。" />
+        <LocalizationItem Name="MenuCmd_FloatingObjectBringInFrontOfText" Value="浮于文字上方" />
+        <LocalizationItem Name="MenuCmd_FloatingObjectBringToFrontDescription" Value="将所选的对象置于所有其他对象，使它的任何部分隐藏在另一个对象。" />
+        <LocalizationItem Name="MenuCmd_InsertPageNumberField" Value="页码" />
+        <LocalizationItem Name="MenuCmd_InsertTableOfContentsDescription" Value="向文档中添加内容表。&#xD;&#xA;&#xD;&#xA;一旦你添加了内容表格中，单击添加文本按钮来添加条目的表。" />
+        <LocalizationItem Name="MenuCmd_Paste" Value="选择性粘贴" />
+        <LocalizationItem Name="MenuCmd_PasteDescription" Value="路径" />
+        <LocalizationItem Name="MenuCmd_Print" Value="与打印" />
+        <LocalizationItem Name="MenuCmd_QuickPrint" Value="与快速打印" />
+        <LocalizationItem Name="MenuCmd_ResetTableCellsBorders" Value="与无边框" />
+        <LocalizationItem Name="MenuCmd_ShowPageSetupForm" Value="页面设置" />
+        <LocalizationItem Name="MenuCmd_ShowPasteSpecialForm" Value="选择性粘贴" />
+        <LocalizationItem Name="MenuCmd_ToggleTableCellsBottomCenterAlignment" Value="底部居中对齐" />
+        <LocalizationItem Name="MenuCmd_ToggleTableCellsBottomLeftAlignment" Value="底部左对齐" />
+        <LocalizationItem Name="MenuCmd_ToggleTableCellsBottomRightAlignment" Value="底部右对齐" />
+        <LocalizationItem Name="MenuCmd_ToggleTableCellsMiddleCenterAlignment" Value="居中对齐" />
+        <LocalizationItem Name="MenuCmd_ToggleTableCellsMiddleLeftAlignment" Value="居中左对齐" />
+        <LocalizationItem Name="MenuCmd_ToggleTableCellsMiddleRightAlignment" Value="居中右对齐" />
+        <LocalizationItem Name="Page" Value="页面 {2}: [{3}]" />
+        <LocalizationItem Name="SelectionCollection_SelecitonShouldIncludeNotMoreThanOneRowException" Value="选择范围应包括不超过一行" />
+        <LocalizationItem Name="TabForm_All" Value="所有" />
+        <LocalizationItem Name="UnderlineNone" Value="（无）" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraTreeList">
+        <LocalizationItem Name="FilterEditorCancelButton" Value="与取消" />
+        <LocalizationItem Name="FilterEditorOkButton" Value="与确定" />
+        <LocalizationItem Name="FindControlClearButton" Value="明确" />
+        <LocalizationItem Name="MenuColumnClearFilter" Value="清除筛选器" />
+        <LocalizationItem Name="MenuFooterAllNodes" Value="所有节点" />
+        <LocalizationItem Name="PopupFilterAll" Value="（全部）" />
+        <LocalizationItem Name="PopupFilterBlanks" Value="（空白）" />
+        <LocalizationItem Name="PopupFilterNonBlanks" Value="（非空白）" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraVerticalGrid">
+        <LocalizationItem Name="FindControlClearButton" Value="明确" />
+        <LocalizationItem Name="RowCustomizationDeleteCategoryText" Value="与删除" />
+        <LocalizationItem Name="RowCustomizationNewCategoryText" Value="与新..." />
+      </LocalizationGroup>
+      <LocalizationGroup Name="HtmlEditor">
+        <LocalizationItem Name="CopyHint" Value="副本" />
+        <LocalizationItem Name="PasteHint" Value="选择性粘贴" />
+        <LocalizationItem Name="StyleAddressCaption" Value="地址" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Apply" Value="应用" />
+      <LocalizationItem Name="Cancel" Value="取消" />
+      <LocalizationItem Name="Close" Value="关闭" />
+      <LocalizationItem Name="No" Value="没有" />
+      <LocalizationItem Name="OK" Value="确定" />
+      <LocalizationItem Name="Retry" Value="重试" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate" Value="骨料" />
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="查看项目可见性" />
+      <LocalizationGroup Name="DevExpress.ExpressApp.Notifications.NotificationsType">
+        <LocalizationItem Name="All" Value="所有" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier">
+        <LocalizationItem Name="Allow" Value="允许" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess">
+        <LocalizationItem Name="AllAccess" Value="锁闭" />
+        <LocalizationItem Name="Create" Value="创建" />
+        <LocalizationItem Name="Delete" Value="删除" />
+        <LocalizationItem Name="Navigate" Value="我的详细信息" />
+        <LocalizationItem Name="Write" Value="导航" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier">
+        <LocalizationItem Name="Allow" Value="允许" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationOutcome" Value="验证结果">
+        <LocalizationItem Name="Valid" Value="有效" />
+        <LocalizationItem Name="Warning" Value="警告" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationResultType" Value="验证结果类型">
+        <LocalizationItem Name="Warning" Value="警告" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType" Value="值比较类型" />
+      <LocalizationGroup Name="DevExpress.XtraBars.Docking.DockVisibility">
+        <LocalizationItem Name="Visible" Value="可见" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SkyFaith.Module.BusinessObjects.顺丰订单管理.PayMethod">
+        <LocalizationItem Name="第三方付" Value="第三方付" />
+        <LocalizationItem Name="寄方付" Value="寄方付" />
+        <LocalizationItem Name="收方付" Value="收方付" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationItem Name="CanNotDeleteObject" Value="您不能删除 '{0}' 由于安全限制的对象。" />
+      <LocalizationItem Name="CanNotSaveObject" Value="你不能拯救 '{0}' 由于安全限制的对象。" />
+      <LocalizationItem Name="ReportsDisplayNameIsEmptyErrorMessage" Value="您试图保存一个空的报告或默认值 &quot;DisplayName&quot; 属性。请在将报告保存前定义此属性。" />
+      <LocalizationGroup Name="SystemExceptions">
+        <LocalizationItem Name="AnUnsavedObjectCannotBeShown" Value="不能显示新创建的记录，直到它被保存。请保存在单独的窗体中查看其详细信息。" />
+        <LocalizationItem Name="CannotAccessCollectionCollectionSourceIsBeingIntialized" Value="因为现在正在初始化集合源，你不能访问的集合属性。例如，当您尝试访问的集合属性中的 ViewController 的 OnActivated 方法时，可能会发生此错误。若要避免此错误是在随后的时间，当已经初始化集合源访问集合属性所必需。最好的办法做到这一点是处理 CollectionChanged 事件。请参阅产品文档在这些类和方法的详细信息。如果这没有帮助，请联系我们的支持团队在 http://www.devexpress.com/Support/Center/" />
+        <LocalizationItem Name="ClassDoesntImplementInterface" Value="类 '{0}' 不实现接口 '{1}'" />
+        <LocalizationItem Name="CurrentObjectIsNotSet" Value="无法设置 '{0}' 属性。未设置当前对象" />
+        <LocalizationItem Name="CustomizePopupWindowParamsEventArgsViewIsNull" Value="若要避免此错误是必要时处理 CustomizePopupWindowParams 事件分配的 CustomizePopupWindowParamsEventArgs.View 属性。要做到这一点，请创建一个视图，使用 XafApplication.CreateDetailView/CreateListView 方法。请参阅产品文档在这些类和方法的详细信息。如果这没有帮助，请联系我们的支持团队在 http://www.devexpress.com/Support/Center/" />
+        <LocalizationItem Name="DataLayerAlreadyExists" Value="DataLayer 已经存在︰ '{0}'" />
+        <LocalizationItem Name="PageCanOnlyContainOneInstanceOfControl" Value="页可以只包含一个实例的 '{0}' 控制" />
+        <LocalizationItem Name="UnableToInitializeFileDataProperty" Value="无法初始化 {0} 在属性 {1} 对象，因为该属性是只读的、 或 {2} 类型没有默认构造函数，或者您没有权限创建它" />
+        <LocalizationItem Name="UnableToSetReadOnlyProperty" Value="无法设置只读属性 '{0}'" />
+        <LocalizationItem Name="UnknownException" Value="发生未知的异常。无法检索异常的详细信息" />
+        <LocalizationItem Name="UnknownValue" Value="未知的值︰ '{0}'" />
+        <LocalizationItem Name="UnknownViewNodeName" Value="未知的视图节点名称︰ '{0}'\r\nAllowed 名称︰ '{1}', '{2}'" />
+        <LocalizationItem Name="ValidationMessageTemplateHasInvalidFormat" Value="验证邮件模板具有无效的格式︰ '{0}'" />
+        <LocalizationItem Name="YouCannotChangeCurrentAspect" Value="您不能更改当前的方面。这取决于当前线程的区域性" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationItem Name="CircularReference" Value="无法完成此操作，因为它会导致循环引用。" />
+        <LocalizationItem Name="LogonAttemptsAmountedToLimitWin" Value="后三次不成功的登录尝试，现在应用程序将会封闭。请联系管理员，了解您的登录详细信息有关。" />
+        <LocalizationGroup Name="Security">
+          <LocalizationItem Name="AllBusinessClasses" Value="首页" />
+          <LocalizationItem Name="AllPersistentBusinessClasses" Value="所有持久性业务类" />
+        </LocalizationGroup>
+        <LocalizationItem Name="SimultaneousChangeDataMessage" Value="警告︰ 在检测到的相同的信息在不同的窗口视图同时修改︰ \n&#xD;&#xA;{0}\n&#xD;&#xA;它将有可能将修改保存在一个窗口/视图只。" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="FileAttachments">
+      <LocalizationItem Name="Editor_Clear" Value="清除内容" />
+      <LocalizationItem Name="WordAll" Value="所有" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="FrameTemplates">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Bars.DetailFormV2">
+        <LocalizationItem Name="barContainerClose.Caption" Value="关闭" />
+        <LocalizationItem Name="barContainerTools.Caption" Value="工具" />
+        <LocalizationItem Name="barSubItemTools.Caption" Value="工具" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Bars.MainFormV2">
+        <LocalizationItem Name="barContainerTools.Caption" Value="工具" />
+        <LocalizationItem Name="barSubItemTools.Caption" Value="工具" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.DetailViewForm">
+        <LocalizationItem Name="barSubItemTools.Caption" Value="工具" />
+        <LocalizationItem Name="cClose.Caption" Value="关闭" />
+        <LocalizationItem Name="cTools.Caption" Value="工具" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.MainForm">
+        <LocalizationItem Name="barSubItemTools.Caption" Value="工具" />
+        <LocalizationItem Name="cTools.Caption" Value="工具" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Ribbon.DetailRibbonFormV2">
+        <LocalizationItem Name="barContainerClose.Caption" Value="关闭" />
+        <LocalizationItem Name="barContainerTools.Caption" Value="工具" />
+        <LocalizationItem Name="ribbonGroupClose.Text" Value="关闭" />
+        <LocalizationItem Name="ribbonGroupTools.Text" Value="工具" />
+        <LocalizationItem Name="toolsPage.Text" Value="工具" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Ribbon.MainRibbonFormV2">
+        <LocalizationItem Name="barContainerTools.Caption" Value="工具" />
+        <LocalizationItem Name="ribbonGroupTools.Text" Value="工具" />
+        <LocalizationItem Name="toolsPage.Text" Value="工具" />
+        <LocalizationItem Name="viewPage.Text" Value="视图" />
+        <LocalizationItem Name="windowPage.Text" Value="窗口" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="Create" Value="创建" />
+      <LocalizationItem Name="Delete" Value="删除" />
+      <LocalizationItem Name="IsGrantedFrom" Value="授予对中的成员 '{0}' 类。" />
+      <LocalizationItem Name="IsInheritedFrom" Value="从继承 '{0}' 类。" />
+      <LocalizationItem Name="Navigate" Value="我的详细信息" />
+      <LocalizationItem Name="Read" Value="读" />
+      <LocalizationItem Name="ReportPreviewFilter" Value="你已经设置的筛选器不能用作时间滤波器的设计因为它使用的筛选器可查询 fields.\r\nAn 自动变化将为设计时间使用，\r\nand 通过设置 FilterForDesignPreview 属性修改此筛选器创建。" />
+      <LocalizationItem Name="UnableToSaveCustomization" Value="无法保存自定义信息︰ \n{0}" />
+      <LocalizationItem Name="User" Value="用户︰ {0}" />
+      <LocalizationItem Name="ValidationErrorMessage" Value="验证错误" />
+      <LocalizationItem Name="ValidationInformationMessage" Value="验证信息" />
+      <LocalizationItem Name="ValidationWarningMessage" Value="验证警告" />
+      <LocalizationItem Name="Write" Value="导航" />
+      <LocalizationItem Name="WrongReportPreviewFilter" Value="滤光片可查询字段不能用于 FilterForDesignPreview 属性。" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Namespaces">
+      <LocalizationItem Name="DevExpress.ExpressApp.Editors" Value="编辑" />
+      <LocalizationItem Name="DevExpress.ExpressApp.Notifications" Value="通知" />
+      <LocalizationItem Name="DevExpress.ExpressApp.Security" Value="安全" />
+      <LocalizationItem Name="DevExpress.ExpressApp.SystemModule.Notifications" Value="通知" />
+      <LocalizationItem Name="DevExpress.Persistent.Validation" Value="验证" />
+      <LocalizationItem Name="DevExpress.Xpo" Value="Xpo" />
+      <LocalizationItem Name="SkyFaith.Module.BusinessObjects.顺丰订单管理" Value="顺丰订单管理" />
+      <LocalizationItem Name="SkyFaith.Module.BusinessObjects.鞋标签打印" Value="鞋标签打印" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Notifications">
+      <LocalizationItem Name="NotificationViewCaption" Value="催复通知" />
+      <LocalizationItem Name="ShowNotificationsActionDisabledTooltip" Value="没有显示的项目" />
+      <LocalizationItem Name="ShowNotificationsActionEnabledTooltip" Value="显示通知" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="OpenSaveDialogFilters">
+      <LocalizationItem Name="AllFiles" Value="所有文件" />
+      <LocalizationItem Name="PdfFiles" Value="Pdf 文件" />
+      <LocalizationItem Name="RtfFiles" Value="Rtf 文件" />
+      <LocalizationItem Name="WmfFiles" Value="Wmf 文件" />
+      <LocalizationItem Name="XlsxFiles" Value="兑换 Xlsx 文件" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Ribbon">
+      <LocalizationItem Name="HomePage" Value="首页" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Security">
+      <LocalizationItem Name="AllBusinessClasses" Value="首页" />
+      <LocalizationItem Name="AllPersistentBusinessClasses" Value="所有持久性业务类" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Texts">
+      <LocalizationItem Name="Aggregates" Value="聚合运算" />
+      <LocalizationItem Name="AggregatesCountDescription" Value="Count\r\nReturns 集合中对象的数目。" />
+      <LocalizationItem Name="AggregatesMaxDescription" Value="最大 （域） \r\nReturns 集合中最大的表达式的值。" />
+      <LocalizationItem Name="AggregatesMinDescription" Value="Min （域） \r\nReturns 集合中最小的表达式的值。" />
+      <LocalizationItem Name="DefaultAspectText" Value="（默认语言）" />
+      <LocalizationItem Name="Error" Value="错误" />
+      <LocalizationItem Name="SharedModelDifferenceName" Value="共享的模型的区别" />
+      <LocalizationItem Name="Warning" Value="警告" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems RelatedViewVariantsGroupCaption="视图的变体">
+    <Items>
+      <Item Id="Reports" Caption="报表" />
+      <Item Id="顺丰订单" Caption="顺丰订单">
+        <Items>
+          <Item Id="Cargo_ListView" Caption="货物" />
+          <Item Id="Order_ListView" Caption="订单" />
+        </Items>
+      </Item>
+      <Item Id="鞋标签打印" Caption="鞋标签打印" />
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Accept" Caption="接受" />
+      <ValidationContext Id="Save" Caption="保存" />
+    </Contexts>
+    <ErrorMessageTemplates>
+      <RuleBase MessageTemplateSkipNullOrEmptyValues="的 &quot;{Id}&quot; 因为其中一个目标属性为空，不被检验规则。" MessageTemplateTargetDoesNotSatisfyTargetCriteria="的 &quot;{Id}&quot; 因为其中一个目标属性为空，不被检验规则。" />
+      <RuleCollectionProperty MessageTemplateCollectionValidationMessageSuffix="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateTargetDoesNotSatisfyCollectionCriteria="的 &quot;{Id}&quot; 规则已不签，因为目标不是一个元素的 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合。" />
+      <RuleCombinationOfPropertiesIsUnique MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateCombinationOfPropertiesMustBeUnique="以下属性的组合必须是唯一的︰ {FormattedTargetProperties}." MessageTemplateFoundObjects="以下属性的组合必须是唯一的︰ {FormattedTargetProperties}." />
+      <RuleCriteria MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateMustSatisfyCriteria="的 &quot;{TargetObject}&quot; 对象必须满足以下条件︰ &quot;{Criteria}&quot;." />
+      <RuleFromBoolProperty MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateMustBeTrue="&quot;{TargetPropertyName}&quot; 必须设置为 true。" />
+      <RuleIsReferenced MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateFoundObjects="以下属性的组合必须是唯一的︰ {FormattedTargetProperties}." MessageTemplateMustBeReferenced="的 &quot;{TargetObject}&quot; 必须引用对象。" />
+      <RuleObjectExists MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateFoundObjects="以下属性的组合必须是唯一的︰ {FormattedTargetProperties}." MessageTemplateMustExist="满足的对象 &quot;{Criteria}&quot; 标准必须存在。" />
+      <RuleRange MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateMustBeInRange="&quot;{TargetPropertyName}&quot; 必须在 &quot;{MinimumValue}&quot; 和 &quot;{MaximumValue}&quot; 范围，界限是包括的。" />
+      <RuleRegularExpression MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateMustMatchPattern="&quot;{TargetPropertyName}&quot; 必须匹配以下模式︰ &quot;{Pattern}&quot;." />
+      <RuleRequiredField MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateMustNotBeEmpty="&quot;{TargetPropertyName}&quot; 不能为空。" />
+      <RuleSearchObject MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateFoundObjects="以下属性的组合必须是唯一的︰ {FormattedTargetProperties}." />
+      <RuleStringComparison MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateMustContain="&quot;{TargetPropertyName}&quot; 必须包含 &quot;{OperandValue}&quot;." MessageTemplateMustBeginWith="&quot;{TargetPropertyName}&quot; 必须以开始 &quot;{OperandValue}&quot;." MessageTemplateMustEndWith="&quot;{TargetPropertyName}&quot; 必须以结束 &quot;{OperandValue}&quot;." MessageTemplateMustBeEqual="&quot;{TargetPropertyName}&quot; 必须等于 &quot;{OperandValue}&quot;." MessageTemplateMustNotBeEqual="&quot;{TargetPropertyName}&quot; 不必须等于 &quot;{OperandValue}&quot;." />
+      <RuleUniqueValue MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateMustBeUnique="有是一个具有相同的值指定为对象 &quot;{TargetPropertyName}&quot;. &quot;{TargetPropertyName}&quot; 值必须是唯一的。" />
+      <RuleValueComparison MessageTemplateSkipNullOrEmptyValues="(为 &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; 集合元素）。" MessageTemplateMustBeEqualToOperand="&quot;{TargetPropertyName}&quot; 必须等于 &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOperand="&quot;{TargetPropertyName}&quot; 必须大于 &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; 必须大于或等于 &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOperand="&quot;{TargetPropertyName}&quot; 必须小于 &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; 必须小于或等于 &quot;{RightOperand}&quot;." MessageTemplateMustNotBeEqualToOperand="&quot;{TargetPropertyName}&quot; 不必须等于 &quot;{RightOperand}&quot;." />
+    </ErrorMessageTemplates>
+    <Rules>
+      <RuleRequiredField Id="FileAttachmentBaseRule" CustomMessageTemplate="应分配文件" />
+      <RuleFromBoolProperty Id="HCategoryCircularReferences" CustomMessageTemplate="检测到的循环 refrerence。若要更正此错误，请将父属性设置为另一个值。" />
+      <RuleUniqueValue Id="SecuritySystemRoleBase_Name_RuleUniqueValue" CustomMessageTemplate="输入的名称与作用已注册系统内" />
+      <RuleRequiredField Id="SecuritySystemUser_Roles_RuleRequiredField" CustomMessageTemplate="活跃的用户必须具有至少一个角色分配" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="ActionContainerDashboardOrganizationItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ActionContainerDescriptor_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView">
+      <Items>
+        <StaticText Id="LogonText" Text="欢迎 ！请输入您的用户名和密码。" />
+        <PropertyEditor Id="Password" Caption="密码" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="AuthenticationStandardLogonParameters_ListView">
+      <Columns>
+        <ColumnInfo Id="Password" Caption="密码" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Cargo_DetailView" Caption="货物">
+      <Items>
+        <PropertyEditor Id="amount" Caption="货物单价" />
+        <PropertyEditor Id="count" Caption="货物数量" />
+        <PropertyEditor Id="name" Caption="货物名称" />
+        <PropertyEditor Id="unit" Caption="货物单位" />
+        <PropertyEditor Id="weight" Caption="订单货物单位重量" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="Cargo_ListView" Caption="货物">
+      <Columns>
+        <ColumnInfo Id="name" Caption="货物名称" />
+        <ColumnInfo Id="count" Caption="货物数量" />
+        <ColumnInfo Id="unit" Caption="货物单位" />
+        <ColumnInfo Id="weight" Caption="订单货物单位重量" />
+        <ColumnInfo Id="amount" Caption="货物单价" />
+      </Columns>
+    </ListView>
+    <ListView Id="Cargo_LookupListView" Caption="货物">
+      <Columns>
+        <ColumnInfo Id="name" Caption="货物名称" />
+        <ColumnInfo Id="count" Caption="货物数量" />
+        <ColumnInfo Id="unit" Caption="货物单位" />
+        <ColumnInfo Id="weight" Caption="订单货物单位重量" />
+        <ColumnInfo Id="amount" Caption="货物单价" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="若要更改您的密码，请在下面的文本字段中输入您旧密码和新密码。" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="CommonNotificationItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ContextValidationResult_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="ContextValidationResult_DisplayableValidationResultItems_ListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="Rule" Caption="规则" />
+      </Columns>
+    </ListView>
+    <DetailView Id="CriteriaProvider_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DashboardCreationInfo_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DashboardCreationInfo">
+              <LayoutGroup Id="ViewItems" Caption="查看项目" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="DashboardName_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DashboardOrganizationItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DashboardOrganizer_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DashboardViewItemDescriptor_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DiagnosticInfoObject_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DisplayableValidationResultItem_DetailView">
+      <Items>
+        <PropertyEditor Id="Rule" Caption="规则" />
+        <PropertyEditor Id="RuleName" Caption="规则名称" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="DisplayableValidationResultItem_ListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="Rule" Caption="规则" />
+      </Columns>
+    </ListView>
+    <ListView Id="DisplayableValidationResultItem_LookupListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="EditModelPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="FileAttachmentBase_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="FileData_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="HCategory_Children_ListView">
+      <Columns>
+        <ColumnInfo Id="Parent" Caption="父" />
+      </Columns>
+    </ListView>
+    <DetailView Id="HCategory_DetailView">
+      <Items>
+        <PropertyEditor Id="Parent" Caption="父" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="HCategory_ListView">
+      <Columns>
+        <ColumnInfo Id="Parent" Caption="父" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ImportData_DetailView" Caption="数据导入">
+      <Items>
+        <PropertyEditor Id="Progress" Caption="进度" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="ImportData_ListView" Caption="数据导入">
+      <Columns>
+        <ColumnInfo Id="Progress" Caption="进度" />
+      </Columns>
+    </ListView>
+    <ListView Id="ImportData_LookupListView" Caption="数据导入">
+      <Columns>
+        <ColumnInfo Id="Progress" Caption="进度" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleBaseProperties_DetailView" Caption="规则基本属性">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="IRuleBaseProperties_ListView" Caption="规则基本属性" />
+    <ListView Id="IRuleBaseProperties_LookupListView" Caption="规则基本属性" />
+    <DetailView Id="IRuleCollectionPropertyProperties_DetailView" Caption="规则集合属性属性">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="IRuleCollectionPropertyProperties_ListView" Caption="规则集合属性属性" />
+    <ListView Id="IRuleCollectionPropertyProperties_LookupListView" Caption="规则集合属性属性" />
+    <DetailView Id="IRuleCombinationOfPropertiesIsUniqueProperties_DetailView" Caption="属性的规则组合是唯一的属性">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="IRuleCombinationOfPropertiesIsUniqueProperties_ListView" Caption="属性的规则组合是唯一的属性" />
+    <ListView Id="IRuleCombinationOfPropertiesIsUniqueProperties_LookupListView" Caption="属性的规则组合是唯一的属性" />
+    <DetailView Id="IRuleCriteriaProperties_DetailView" Caption="规则的标准属性">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="IRuleCriteriaProperties_ListView" Caption="规则的标准属性" />
+    <ListView Id="IRuleCriteriaProperties_LookupListView" Caption="规则的标准属性" />
+    <DetailView Id="IRuleFromBoolPropertyProperties_DetailView" Caption="Bool 属性属性的规则">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="IRuleFromBoolPropertyProperties_ListView" Caption="Bool 属性属性的规则" />
+    <ListView Id="IRuleFromBoolPropertyProperties_LookupListView" Caption="Bool 属性属性的规则" />
+    <DetailView Id="IRuleIsReferencedProperties_DetailView" Caption="规则引用属性">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="IRuleIsReferencedProperties_ListView" Caption="规则引用属性" />
+    <ListView Id="IRuleIsReferencedProperties_LookupListView" Caption="规则引用属性" />
+    <DetailView Id="IRuleObjectExistsProperties_DetailView" Caption="规则对象存在属性">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="IRuleObjectExistsProperties_ListView" Caption="规则对象存在属性" />
+    <ListView Id="IRuleObjectExistsProperties_LookupListView" Caption="规则对象存在属性" />
+    <DetailView Id="IRulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRegularExpressionProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="Pattern" Caption="模式" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="IRuleRegularExpressionProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="Pattern" Caption="模式" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSupportsCollectionAggregatesProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ModelDifference_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ModelDifferenceAspect_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ModelDifferenceCopyParameters_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="NewReportWizardParameters_DetailView">
+      <Items>
+        <StaticText Id="ReportText" Text="若要创建新的报表，请在以下字段中输入一个名称并从列表中选择报表的主数据类型。" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="Notification_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="NotificationsObject_DetailView">
+      <Layout>
+        <LayoutGroup Id="MasterGroup">
+          <LayoutGroup Id="Main" Caption="主要" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="Order_Cargos_ListView" Caption="货物">
+      <Columns>
+        <ColumnInfo Id="name" Caption="货物名称" />
+        <ColumnInfo Id="count" Caption="货物数量" />
+        <ColumnInfo Id="unit" Caption="货物单位" />
+        <ColumnInfo Id="weight" Caption="订单货物单位重量" />
+        <ColumnInfo Id="amount" Caption="货物单价" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Order_DetailView" Caption="订单">
+      <Items>
+        <PropertyEditor Id="Cargos" Caption="订单货物" />
+        <PropertyEditor Id="d_address" Caption="到件方详细地址" />
+        <PropertyEditor Id="d_city" Caption="到件方所在城市名称" />
+        <PropertyEditor Id="d_county" Caption="到件方所在县/区" />
+        <PropertyEditor Id="d_province" Caption="到件方所在省份" />
+        <PropertyEditor Id="j_address" Caption="寄件方详细地址" />
+        <PropertyEditor Id="j_city" Caption="寄件方所在城市名称" />
+        <PropertyEditor Id="j_company" Caption="寄件方公司名称" />
+        <PropertyEditor Id="j_contact" Caption="寄件方联系人" />
+        <PropertyEditor Id="j_country" Caption="寄方国家" />
+        <PropertyEditor Id="j_county" Caption="寄件人所在县/区" />
+        <PropertyEditor Id="j_post_code" Caption="寄方邮编" />
+        <PropertyEditor Id="j_province" Caption="寄件方所在省份" />
+        <PropertyEditor Id="j_shippercode" Caption="寄件方国家/城市代码" />
+        <PropertyEditor Id="j_tel" Caption="寄件方联系电话" />
+        <PropertyEditor Id="mailno" Caption="顺丰运单号" />
+        <PropertyEditor Id="orderid" Caption="订单号" />
+        <PropertyEditor Id="pay_method" Caption="付款方式" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="Cargos_Group" Caption="订单货物" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Order_ListView" Caption="订单">
+      <Columns>
+        <ColumnInfo Id="orderid" Caption="订单号" />
+        <ColumnInfo Id="mailno" Caption="顺丰运单号" />
+        <ColumnInfo Id="j_company" Caption="寄件方公司名称" />
+        <ColumnInfo Id="j_contact" Caption="寄件方联系人" />
+        <ColumnInfo Id="j_tel" Caption="寄件方联系电话" />
+        <ColumnInfo Id="j_shippercode" Caption="寄件方国家/城市代码" />
+        <ColumnInfo Id="j_country" Caption="寄方国家" />
+        <ColumnInfo Id="j_province" Caption="寄件方所在省份" />
+        <ColumnInfo Id="j_city" Caption="寄件方所在城市名称" />
+        <ColumnInfo Id="j_county" Caption="寄件人所在县/区" />
+        <ColumnInfo Id="j_address" Caption="寄件方详细地址" />
+        <ColumnInfo Id="j_post_code" Caption="寄方邮编" />
+        <ColumnInfo Id="d_province" Caption="到件方所在省份" />
+        <ColumnInfo Id="d_city" Caption="到件方所在城市名称" />
+        <ColumnInfo Id="d_county" Caption="到件方所在县/区" />
+        <ColumnInfo Id="d_address" Caption="到件方详细地址" />
+        <ColumnInfo Id="pay_method" Caption="付款方式" />
+      </Columns>
+    </ListView>
+    <ListView Id="Order_LookupListView" Caption="订单">
+      <Columns>
+        <ColumnInfo Id="orderid" Caption="订单号" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PersistentBase_DetailView" Caption="永久基地" />
+    <ListView Id="PersistentBase_ListView" Caption="永久基地" />
+    <ListView Id="PersistentBase_LookupListView" Caption="永久基地" />
+    <DetailView Id="PostponeTime_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ProcessDataLockingInfoMergeDialog_DetailView" Caption="警告" />
+    <DetailView Id="ProcessDataLockingInfoRefreshDialog_DetailView" Caption="警告" />
+    <DetailView Id="ReportDataV2_DetailView">
+      <Items>
+        <PropertyEditor Id="ParametersObjectType" Caption="参数对象类型" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="ReportDataV2_ListView">
+      <Columns>
+        <ColumnInfo Id="ParametersObjectType" Caption="参数对象类型" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ResetPasswordParameters_DetailView">
+      <Items>
+        <PropertyEditor Id="Password" Caption="密码" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ResetPasswordParameters" Caption="密码" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ResetPasswordParameters_ListView">
+      <Columns>
+        <ColumnInfo Id="Password" Caption="密码" />
+      </Columns>
+    </ListView>
+    <ListView Id="ResetPasswordParameters_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Password" Caption="密码" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleBaseProperties_DetailView" Caption="规则基本属性">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleBaseProperties_ListView" Caption="规则基本属性" />
+    <ListView Id="RuleBaseProperties_LookupListView" Caption="规则基本属性" />
+    <DetailView Id="RuleCombinationOfPropertiesIsUniqueProperties_DetailView" Caption="属性的规则组合是唯一的属性">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleCombinationOfPropertiesIsUniqueProperties_ListView" Caption="属性的规则组合是唯一的属性" />
+    <ListView Id="RuleCombinationOfPropertiesIsUniqueProperties_LookupListView" Caption="属性的规则组合是唯一的属性" />
+    <DetailView Id="RuleCriteriaProperties_DetailView" Caption="规则的标准属性">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleCriteriaProperties_ListView" Caption="规则的标准属性" />
+    <ListView Id="RuleCriteriaProperties_LookupListView" Caption="规则的标准属性" />
+    <DetailView Id="RuleFromBoolPropertyProperties_DetailView" Caption="Bool 属性属性的规则">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleFromBoolPropertyProperties_ListView" Caption="Bool 属性属性的规则" />
+    <ListView Id="RuleFromBoolPropertyProperties_LookupListView" Caption="Bool 属性属性的规则" />
+    <DetailView Id="RuleIsReferencedProperties_DetailView" Caption="规则引用属性">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleIsReferencedProperties_ListView" Caption="规则引用属性" />
+    <ListView Id="RuleIsReferencedProperties_LookupListView" Caption="规则引用属性" />
+    <DetailView Id="RuleObjectExistsProperties_DetailView" Caption="规则对象存在属性">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleObjectExistsProperties_ListView" Caption="规则对象存在属性" />
+    <ListView Id="RuleObjectExistsProperties_LookupListView" Caption="规则对象存在属性" />
+    <DetailView Id="RulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRegularExpressionProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="Pattern" Caption="模式" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleRegularExpressionProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="Pattern" Caption="模式" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView" Caption="验证错误">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleSetValidationResult_Results_ListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="Rule" Caption="规则" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResultItem_DetailView">
+      <Items>
+        <PropertyEditor Id="Rule" Caption="规则" />
+        <PropertyEditor Id="RuleName" Caption="规则名称" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItem_ListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="Rule" Caption="规则" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleSetValidationResultItemAggregate_AggregatedResults_ListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="Rule" Caption="规则" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResultItemAggregate_DetailView">
+      <Items>
+        <PropertyEditor Id="Rule" Caption="规则" />
+        <PropertyEditor Id="RuleName" Caption="规则名称" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItemAggregate_ListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="Rule" Caption="规则" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleSetValidationResultItemAggregate_LookupListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="Rule" Caption="规则" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="规则基本属性" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SecuritySystemMemberPermissionsObject_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="SecuritySystemObjectPermissionsObject_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="SecuritySystemRole_DetailView">
+      <Items>
+        <PropertyEditor Id="ParentRoles" Caption="父角色" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <TabbedGroup Id="Tabs1">
+            <LayoutGroup Id="ParentRoles" Caption="父角色" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SecuritySystemRoleBase_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="SecuritySystemTypePermissionObject_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="SecuritySystemTypePermissionsObjectBase_DetailView">
+      <Items>
+        <PropertyEditor Id="AllowCreate" Caption="创建" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="SecuritySystemTypePermissionsObjectBase_ObjectPermissions_ListView">
+      <Columns>
+        <ColumnInfo Id="AllowWrite" Caption="允许写入" />
+      </Columns>
+    </ListView>
+    <DetailView Id="SecuritySystemTypePermissionsObjectOwner_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="SecuritySystemUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="SecuritySystemUserBase_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="StaticImageDashboardOrganizationItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="StaticTextDashboardOrganizationItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="TypePermissionMatrixItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Permissions" Caption="权限" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <ListView Id="ValidationResults_DisplayableValidationResultItems_ListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="Rule" Caption="规则" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Passed_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ViewDashboardOrganizationItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="产品信息_DetailView">
+      <Items>
+        <PropertyEditor Id="货号" Caption="货号" />
+        <PropertyEditor Id="京东码" Caption="京东码" />
+        <PropertyEditor Id="旧京东码" Caption="旧京东码" />
+        <PropertyEditor Id="条形码" Caption="条形码" />
+        <PropertyEditor Id="图片" Caption="图片" />
+        <PropertyEditor Id="鞋图名称" Caption="鞋图名称" />
+        <PropertyEditor Id="颜色" Caption="颜色" />
+        <PropertyEditor Id="英文名称" Caption="英文名称" />
+        <PropertyEditor Id="英文颜色" Caption="英文颜色" />
+        <PropertyEditor Id="中文名称" Caption="中文名称" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="主要">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="产品信息" Caption="产品信息" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="产品信息_ListView">
+      <Columns>
+        <ColumnInfo Id="颜色" Caption="颜色" />
+        <ColumnInfo Id="英文名称" Caption="英文名称" />
+        <ColumnInfo Id="英文颜色" Caption="英文颜色" />
+        <ColumnInfo Id="中文名称" Caption="中文名称" />
+        <ColumnInfo Id="货号" Caption="货号" />
+        <ColumnInfo Id="鞋图名称" Caption="鞋图名称" />
+        <ColumnInfo Id="图片" Caption="图片" />
+        <ColumnInfo Id="条形码" Caption="条形码" />
+        <ColumnInfo Id="京东码" Caption="京东码" />
+        <ColumnInfo Id="旧京东码" Caption="旧京东码" />
+      </Columns>
+    </ListView>
+    <ListView Id="产品信息_LookupListView">
+      <Columns>
+        <ColumnInfo Id="中文名称" Caption="中文名称" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

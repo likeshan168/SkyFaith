@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://dpd.ru/ws/tracing/2011-11-18" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="ParcelTracingService" targetNamespace="http://dpd.ru/ws/tracing/2011-11-18" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://wstest.dpd.ru:80/services/tracing?xsd=1" namespace="http://dpd.ru/ws/tracing/2011-11-18" />
+    </xsd:schema>
+  </types>
+  <message name="getStatesByClient">
+    <part name="parameters" element="tns:getStatesByClient" />
+  </message>
+  <message name="getStatesByClientResponse">
+    <part name="parameters" element="tns:getStatesByClientResponse" />
+  </message>
+  <message name="WSFault">
+    <part name="fault" element="tns:WSFault" />
+  </message>
+  <message name="getStatesByClientOrder">
+    <part name="parameters" element="tns:getStatesByClientOrder" />
+  </message>
+  <message name="getStatesByClientOrderResponse">
+    <part name="parameters" element="tns:getStatesByClientOrderResponse" />
+  </message>
+  <message name="getStatesByClientParcel">
+    <part name="parameters" element="tns:getStatesByClientParcel" />
+  </message>
+  <message name="getStatesByClientParcelResponse">
+    <part name="parameters" element="tns:getStatesByClientParcelResponse" />
+  </message>
+  <message name="getStatesByDPDOrder">
+    <part name="parameters" element="tns:getStatesByDPDOrder" />
+  </message>
+  <message name="getStatesByDPDOrderResponse">
+    <part name="parameters" element="tns:getStatesByDPDOrderResponse" />
+  </message>
+  <message name="confirm">
+    <part name="parameters" element="tns:confirm" />
+  </message>
+  <message name="confirmResponse">
+    <part name="parameters" element="tns:confirmResponse" />
+  </message>
+  <portType name="ParcelTracing">
+    <operation name="getStatesByClient">
+      <input wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByClientRequest" message="tns:getStatesByClient" />
+      <output wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByClientResponse" message="tns:getStatesByClientResponse" />
+      <fault wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByClient/Fault/WSFault" name="WSFault" message="tns:WSFault" />
+    </operation>
+    <operation name="getStatesByClientOrder">
+      <input wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByClientOrderRequest" message="tns:getStatesByClientOrder" />
+      <output wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByClientOrderResponse" message="tns:getStatesByClientOrderResponse" />
+      <fault wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByClientOrder/Fault/WSFault" name="WSFault" message="tns:WSFault" />
+    </operation>
+    <operation name="getStatesByClientParcel">
+      <input wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByClientParcelRequest" message="tns:getStatesByClientParcel" />
+      <output wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByClientParcelResponse" message="tns:getStatesByClientParcelResponse" />
+      <fault wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByClientParcel/Fault/WSFault" name="WSFault" message="tns:WSFault" />
+    </operation>
+    <operation name="getStatesByDPDOrder">
+      <input wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByDPDOrderRequest" message="tns:getStatesByDPDOrder" />
+      <output wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByDPDOrderResponse" message="tns:getStatesByDPDOrderResponse" />
+      <fault wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/getStatesByDPDOrder/Fault/WSFault" name="WSFault" message="tns:WSFault" />
+    </operation>
+    <operation name="confirm">
+      <input wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/confirmRequest" message="tns:confirm" />
+      <output wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/confirmResponse" message="tns:confirmResponse" />
+      <fault wsam:Action="http://dpd.ru/ws/tracing/2011-11-18/ParcelTracing/confirm/Fault/WSFault" name="WSFault" message="tns:WSFault" />
+    </operation>
+  </portType>
+  <binding name="ParcelTracingPortBinding" type="tns:ParcelTracing">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getStatesByClient">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="WSFault">
+        <soap:fault use="literal" name="WSFault" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getStatesByClientOrder">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="WSFault">
+        <soap:fault use="literal" name="WSFault" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getStatesByClientParcel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="WSFault">
+        <soap:fault use="literal" name="WSFault" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getStatesByDPDOrder">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="WSFault">
+        <soap:fault use="literal" name="WSFault" namespace="" />
+      </fault>
+    </operation>
+    <operation name="confirm">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="WSFault">
+        <soap:fault use="literal" name="WSFault" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="ParcelTracingService">
+    <port name="ParcelTracingPort" binding="tns:ParcelTracingPortBinding">
+      <soap:address location="http://wstest.dpd.ru:80/services/tracing" />
+    </port>
+  </service>
+</definitions>

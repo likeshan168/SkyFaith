@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Admiral.ImportData.Win" Logo="ExpressAppLogo">
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="15.2.9.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="15.2.9.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="ImportData_DetailView">
+      <Items>
+        <PropertyEditor Id="Progress" PropertyEditorType="Admiral.DataImport.Editors.Win.WinProgressEdit" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

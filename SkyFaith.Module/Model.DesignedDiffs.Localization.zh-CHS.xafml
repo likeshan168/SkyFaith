@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application VersionFormat="版本 {0}.{1}.{2}" ProtectedContentText="受保护的内容">
+  <ActionDesign>
+    <Actions>
+      <Action Id="Cancel" Caption="取消" />
+      <Action Id="ChangeVariant" Caption="视图" />
+      <Action Id="CloneObject" Caption="克隆人......" />
+      <Action Id="CopyModelDifference" Caption="复制模型的区别" />
+      <Action Id="CopyPredefinedReport" Caption="复制预定义的报表" />
+      <Action Id="CreateDashboard" Caption="创建仪表板" />
+      <Action Id="CreateModelDifferences" Caption="创建模式的差异" />
+      <Action Id="Delete" Caption="删除" />
+      <Action Id="Delete Item" Caption="删除项目" />
+      <Action Id="DeleteDashboard" Caption="删除仪表板" />
+      <Action Id="Diagnostic Info" Caption="诊断" />
+      <Action Id="Diagnostic Info.Actions Info" Caption="Info.Actions 诊断信息">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Actions Info" Caption="操作信息" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info.Rules Info" Caption="Info.Rules 诊断信息">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Rules Info" Caption="规则信息" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info.View Info" Caption="Info.View 诊断信息">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="View Info" Caption="查看信息" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="DialogCancel" Caption="取消" />
+      <Action Id="DialogClose" Caption="关闭" />
+      <Action Id="DialogOK" Caption="还行" />
+      <Action Id="Dismiss" Caption="解雇" />
+      <Action Id="DismissAll" Caption="全部取消" />
+      <Action Id="ExportModelDifferences" Caption="出口模式的差异" />
+      <Action Id="FullTextSearch" Caption="按文本筛选" />
+      <Action Id="HideItemsFromDashboard" Caption="隐藏从仪表板" />
+      <Action Id="ImportSharedModelDifference" Caption="导入共享模型的区别" />
+      <Action Id="Link" Caption="链接" />
+      <Action Id="ListViewShowObject" Caption="开放" />
+      <Action Id="Logoff" Caption="注销" />
+      <Action Id="Logon" Caption="登录" />
+      <Action Id="NavigateBack" Caption="返回" />
+      <Action Id="NavigateForward" Caption="前进" />
+      <Action Id="New" Caption="新增功能">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="编辑后的对象是新的。" />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="下一条记录" />
+      <Action Id="OrganizeDashboard" Caption="组织仪表板" />
+      <Action Id="PreviewReportV2" Caption="预览" />
+      <Action Id="PreviousObject" Caption="上一条记录" />
+      <Action Id="Refresh" Caption="刷新" />
+      <Action Id="RefreshNotifications" Caption="刷新" />
+      <Action Id="ReportViewerDialogControllerV2_Close" Caption="关闭" />
+      <Action Id="ResetModelDifferences" Caption="重置模式的差异" />
+      <Action Id="ResetViewSettings" Caption="重置视图设置" />
+      <Action Id="Save" Caption="保存" />
+      <Action Id="SaveAndClose" Caption="保存并关闭" />
+      <Action Id="SaveAndNew" Caption="保存并新建" />
+      <Action Id="SetFilter" Caption="筛选器" />
+      <Action Id="ShowAllContexts" Caption="验证" />
+      <Action Id="ShowInReportV2" Caption="在报表中显示" />
+      <Action Id="ShowItemsOnDashboard" Caption="在仪表板上显示" />
+      <Action Id="ShowNavigationItem" Caption="导航" />
+      <Action Id="Snooze" Caption="贪睡" />
+      <Action Id="Unlink" Caption="取消链接" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="需要至少一个选定的对象" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="需要选择单个对象" />
+      <Reason Id="Security" Caption="权限被拒绝" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="Admiral.ImportData.ImportData">
+      <OwnMembers>
+        <Member Name="Option" Caption="选项" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem">
+      <OwnMembers>
+        <Member Name="Preview" Caption="预览" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="视图">
+      <OwnMembers>
+        <Member Name="ViewDescriptor" Caption="视图" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="View" Value="视图" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Close" Value="关闭" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationItem Name="ReportsDisplayNameIsEmptyErrorMessage" Value="您试图保存一个空的报告或默认值 &quot;DisplayName&quot; 属性。请在将报告保存前定义此属性。" />
+      <LocalizationGroup Name="SystemExceptions">
+        <LocalizationItem Name="CannotAccessCollectionCollectionSourceIsBeingIntialized" Value="因为现在正在初始化集合源，你不能访问的集合属性。例如，当您尝试访问的集合属性中的 ViewController 的 OnActivated 方法时，可能会发生此错误。若要避免此错误是在随后的时间，当已经初始化集合源访问集合属性所必需。最好的办法做到这一点是处理 CollectionChanged 事件。请参阅产品文档在这些类和方法的详细信息。如果这没有帮助，请联系我们的支持团队在 http://www.devexpress.com/Support/Center/" />
+        <LocalizationItem Name="YouCannotChangeCurrentAspect" Value="您不能更改当前的方面。这取决于当前线程的区域性" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+</Application>

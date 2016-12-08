@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.expressservice.integration.sf.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="CommonExpressServiceService" targetNamespace="http://service.expressservice.integration.sf.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.expressservice.integration.sf.com/">
+      <xsd:element name="sfexpressService" type="tns:sfexpressService" />
+      <xsd:complexType name="sfexpressService">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+          <xsd:element minOccurs="0" name="arg1" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="sfexpressServiceResponse" type="tns:sfexpressServiceResponse" />
+      <xsd:complexType name="sfexpressServiceResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="sfexpressService">
+    <wsdl:part name="parameters" element="tns:sfexpressService" />
+  </wsdl:message>
+  <wsdl:message name="sfexpressServiceResponse">
+    <wsdl:part name="parameters" element="tns:sfexpressServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IExpressService">
+    <wsdl:operation name="sfexpressService">
+      <wsdl:input name="sfexpressService" message="tns:sfexpressService" />
+      <wsdl:output name="sfexpressServiceResponse" message="tns:sfexpressServiceResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CommonExpressServiceServiceSoapBinding" type="tns:IExpressService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="sfexpressService">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="sfexpressService">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="sfexpressServiceResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CommonExpressServiceService">
+    <wsdl:port name="CommonExpressServicePort" binding="tns:CommonExpressServiceServiceSoapBinding">
+      <soap:address location="http://bspoisp.sit.sf-express.com:11080/bsp-oisp/ws/sfexpressService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

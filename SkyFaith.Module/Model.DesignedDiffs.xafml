@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="SkyFaith" Logo="OrderTracking">
+  <BOModel>
+    <Class Name="SkyFaith.Module.BusinessObjects.顺丰订单管理.Cargo">
+      <OwnMembers>
+        <Member Name="amount" EditMask="C3" DisplayFormat="{0:C3}" />
+        <Member Name="weight" EditMask="C3" DisplayFormat="{0:C3}" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <ImageSources>
+    <FileImageSource Folder="Images" Index="0" />
+    <AssemblyResourceImageSource AssemblyName="SkyFaith.Module" Folder="Images" />
+  </ImageSources>
+  <NavigationItems DefaultChildItemsDisplayStyle="List" NavigationStyle="TreeList" RelatedReportsGroupCaption="" StartupNavigationItem="Welcome">
+    <Items>
+      <Item Id="Welcome" Caption="Welcome" ImageName="Welcome" ViewId="Welcome_ListView" Index="0" IsNewNode="True" />
+      <Item Id="Default" Caption="主界面" Index="1" />
+      <Item Id="顺丰订单" Index="2">
+        <Items>
+          <Item Id="Order_ListView" Caption="订单" ViewId="Order_ListView" />
+        </Items>
+      </Item>
+      <Item Id="鞋标签打印" Index="3">
+        <Items>
+          <Item Id="产品信息_ListView" ViewId="产品信息_ListView_Varied" />
+        </Items>
+      </Item>
+      <Item Id="测试" Index="4" />
+      <Item Id="Reports" Caption="报表" Index="5" />
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="16.2.2.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="16.2.2.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="产品信息_ListView">
+      <Columns>
+        <ColumnInfo Id="AUS" Index="-1" />
+        <ColumnInfo Id="CM" Index="-1" />
+        <ColumnInfo Id="EU" Index="-1" />
+        <ColumnInfo Id="Inches" Index="-1" />
+        <ColumnInfo Id="USA" Index="-1" />
+        <ColumnInfo Id="颜色" Index="-1" />
+        <ColumnInfo Id="英文名称" Index="-1" />
+        <ColumnInfo Id="英文颜色" Index="-1" />
+        <ColumnInfo Id="鞋图名称" Index="2" />
+        <ColumnInfo Id="图片" Index="3" />
+        <ColumnInfo Id="条形码" Index="4" />
+        <ColumnInfo Id="京东码" Index="5" />
+        <ColumnInfo Id="旧京东码" Index="6" />
+      </Columns>
+    </ListView>
+    <ListView Id="产品信息_ListView_AllColumns" ClassName="SkyFaith.Module.BusinessObjects.鞋标签打印.产品信息" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="中文名称" PropertyName="中文名称" Index="0" Width="400" SortIndex="0" SortOrder="Ascending" IsNewNode="True" />
+        <ColumnInfo Id="货号" PropertyName="货号" Index="1" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="颜色" PropertyName="颜色" Index="2" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="鞋图名称" PropertyName="鞋图名称" Index="3" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="英文颜色" PropertyName="英文颜色" Index="4" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="英文名称" PropertyName="英文名称" Index="5" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="图片" PropertyName="图片" Index="6" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="AUS" PropertyName="AUS" Index="7" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="EU" PropertyName="EU" Index="8" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="USA" PropertyName="USA" Index="9" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="CM" PropertyName="CM" Index="10" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="Inches" PropertyName="Inches" Index="11" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="条形码" PropertyName="条形码" Index="12" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="京东码" PropertyName="京东码" Index="13" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="旧京东码" PropertyName="旧京东码" Index="14" Width="70" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="产品信息_ListView_Varied" ClassName="SkyFaith.Module.BusinessObjects.鞋标签打印.产品信息" IsNewNode="True">
+      <Variants IsNewNode="True">
+        <Variant Id="精简显示" ViewID="产品信息_ListView" Caption="精简显示" IsNewNode="True" />
+        <Variant Id="全部显示" ViewID="产品信息_ListView_AllColumns" Caption="全部显示" IsNewNode="True" />
+      </Variants>
+    </ListView>
+  </Views>
+</Application>
