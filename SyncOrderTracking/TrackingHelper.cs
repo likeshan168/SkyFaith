@@ -1,17 +1,14 @@
 ﻿using Dapper;
+using DPDModel.Models;
+using DPDModelDPDModel.DAL;
 using SyncOrderTracking.BLL;
-using SyncOrderTracking.Models;
 using SyncOrderTracking.ru.dpd.wstest;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
-using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace SyncOrderTracking
 {

@@ -66,13 +66,6 @@
   <ItemGroup>
     <Compile Include="BLL\Constants.cs" />
     <Compile Include="BLL\DateTimeManger.cs" />
-    <Compile Include="Models\Agent.cs" />
-    <Compile Include="Models\Config.cs" />
-    <Compile Include="Models\GetWrodReplace.cs" />
-    <Compile Include="Models\ServerLog.cs" />
-    <Compile Include="Models\SFITrackNum.cs" />
-    <Compile Include="Models\SystemLog.cs" />
-    <Compile Include="Models\TrackRecord.cs" />
     <Compile Include="ProjectInstaller.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -84,7 +77,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="SQLHelper.cs" />
     <Compile Include="TrackingHelper.cs" />
     <Compile Include="TrackingService.cs">
       <SubType>Component</SubType>
@@ -168,7 +160,12 @@
       <CachedSettingsPropName>SyncOrderTracking_ru_dpd_wstest_ParcelTracingService</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DPDModel\DPDModel.csproj">
+      <Project>{3c5b596a-1ec2-4022-b33f-122574300c54}</Project>
+      <Name>DPDModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

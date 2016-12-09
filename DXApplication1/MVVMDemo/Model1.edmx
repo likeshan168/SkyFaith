@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="db_SFIModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tb_Agent">
+          <Key>
+            <PropertyRef Name="int_AGid" />
+          </Key>
+          <Property Name="int_AGid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="vchar_AGcode" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="vchar_AGname" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="vchar_AGLinkMan" Type="nvarchar" MaxLength="50" />
+          <Property Name="vchar_AGcontect" Type="varchar" MaxLength="50" />
+          <Property Name="int_AGtype" Type="smallint" Nullable="false" />
+          <Property Name="bit_synOpen" Type="bit" Nullable="false" />
+          <Property Name="vchar_synVerify" Type="varchar" MaxLength="50" />
+          <Property Name="vchar_synStopKeyWord" Type="nvarchar" MaxLength="50" />
+          <Property Name="int_synSpacing" Type="int" />
+          <Property Name="bit_synQuery" Type="bit" Nullable="false" />
+          <Property Name="vchar_QueryVerify" Type="varchar" MaxLength="50" />
+          <Property Name="bit_synPush" Type="bit" Nullable="false" />
+          <Property Name="vchar_PushUser" Type="varchar" MaxLength="50" />
+          <Property Name="vchar_PushVerify" Type="varchar" MaxLength="50" />
+          <Property Name="IsOpen" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“db_SFI.dbo.tb_SFI_TrackNum”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="tb_SFI_TrackNum">
+          <Key>
+            <PropertyRef Name="int_Mappingid" />
+            <PropertyRef Name="vchar_SFInum" />
+            <PropertyRef Name="vchar_AGnum" />
+            <PropertyRef Name="int_AGid" />
+            <PropertyRef Name="int_AG_Syn" />
+            <PropertyRef Name="char_IsStop" />
+          </Key>
+          <Property Name="int_Mappingid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="vchar_SFInum" Type="varchar" MaxLength="32" Nullable="false" />
+          <Property Name="vchar_AGnum" Type="varchar" MaxLength="32" Nullable="false" />
+          <Property Name="int_AGid" Type="int" Nullable="false" />
+          <Property Name="vchar_updateUser" Type="nvarchar" MaxLength="50" />
+          <Property Name="dttm_updateDttm" Type="datetime" />
+          <Property Name="dttm_AG_LastSyn" Type="datetime" />
+          <Property Name="int_AG_Syn" Type="smallint" Nullable="false" />
+          <Property Name="char_IsStop" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="char_AG_Syn_sign" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityContainer Name="db_SFIModelStoreContainer">
+          <EntitySet Name="tb_Agent" EntityType="Self.tb_Agent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_SFI_TrackNum" EntityType="Self.tb_SFI_TrackNum" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [tb_SFI_TrackNum].[int_Mappingid] AS [int_Mappingid], 
+    [tb_SFI_TrackNum].[vchar_SFInum] AS [vchar_SFInum], 
+    [tb_SFI_TrackNum].[vchar_AGnum] AS [vchar_AGnum], 
+    [tb_SFI_TrackNum].[int_AGid] AS [int_AGid], 
+    [tb_SFI_TrackNum].[vchar_updateUser] AS [vchar_updateUser], 
+    [tb_SFI_TrackNum].[dttm_updateDttm] AS [dttm_updateDttm], 
+    [tb_SFI_TrackNum].[dttm_AG_LastSyn] AS [dttm_AG_LastSyn], 
+    [tb_SFI_TrackNum].[int_AG_Syn] AS [int_AG_Syn], 
+    [tb_SFI_TrackNum].[char_IsStop] AS [char_IsStop], 
+    [tb_SFI_TrackNum].[char_AG_Syn_sign] AS [char_AG_Syn_sign]
+    FROM [dbo].[tb_SFI_TrackNum] AS [tb_SFI_TrackNum]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_SFIModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tb_Agent">
+          <Key>
+            <PropertyRef Name="int_AGid" />
+          </Key>
+          <Property Name="int_AGid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="vchar_AGcode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="vchar_AGname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="vchar_AGLinkMan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="vchar_AGcontect" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="int_AGtype" Type="Int16" Nullable="false" />
+          <Property Name="bit_synOpen" Type="Boolean" Nullable="false" />
+          <Property Name="vchar_synVerify" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="vchar_synStopKeyWord" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="int_synSpacing" Type="Int32" />
+          <Property Name="bit_synQuery" Type="Boolean" Nullable="false" />
+          <Property Name="vchar_QueryVerify" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="bit_synPush" Type="Boolean" Nullable="false" />
+          <Property Name="vchar_PushUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="vchar_PushVerify" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IsOpen" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_SFI_TrackNum">
+          <Key>
+            <PropertyRef Name="int_Mappingid" />
+            <PropertyRef Name="vchar_SFInum" />
+            <PropertyRef Name="vchar_AGnum" />
+            <PropertyRef Name="int_AGid" />
+            <PropertyRef Name="int_AG_Syn" />
+            <PropertyRef Name="char_IsStop" />
+          </Key>
+          <Property Name="int_Mappingid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="vchar_SFInum" Type="String" MaxLength="32" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="vchar_AGnum" Type="String" MaxLength="32" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="int_AGid" Type="Int32" Nullable="false" />
+          <Property Name="vchar_updateUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dttm_updateDttm" Type="DateTime" Precision="3" />
+          <Property Name="dttm_AG_LastSyn" Type="DateTime" Precision="3" />
+          <Property Name="int_AG_Syn" Type="Int16" Nullable="false" />
+          <Property Name="char_IsStop" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="char_AG_Syn_sign" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="db_SFIEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tb_Agent" EntityType="Self.tb_Agent" />
+          <EntitySet Name="tb_SFI_TrackNum" EntityType="Self.tb_SFI_TrackNum" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_SFIModelStoreContainer" CdmEntityContainer="db_SFIEntities">
+          <EntitySetMapping Name="tb_Agent">
+            <EntityTypeMapping TypeName="db_SFIModel.tb_Agent">
+              <MappingFragment StoreEntitySet="tb_Agent">
+                <ScalarProperty Name="int_AGid" ColumnName="int_AGid" />
+                <ScalarProperty Name="vchar_AGcode" ColumnName="vchar_AGcode" />
+                <ScalarProperty Name="vchar_AGname" ColumnName="vchar_AGname" />
+                <ScalarProperty Name="vchar_AGLinkMan" ColumnName="vchar_AGLinkMan" />
+                <ScalarProperty Name="vchar_AGcontect" ColumnName="vchar_AGcontect" />
+                <ScalarProperty Name="int_AGtype" ColumnName="int_AGtype" />
+                <ScalarProperty Name="bit_synOpen" ColumnName="bit_synOpen" />
+                <ScalarProperty Name="vchar_synVerify" ColumnName="vchar_synVerify" />
+                <ScalarProperty Name="vchar_synStopKeyWord" ColumnName="vchar_synStopKeyWord" />
+                <ScalarProperty Name="int_synSpacing" ColumnName="int_synSpacing" />
+                <ScalarProperty Name="bit_synQuery" ColumnName="bit_synQuery" />
+                <ScalarProperty Name="vchar_QueryVerify" ColumnName="vchar_QueryVerify" />
+                <ScalarProperty Name="bit_synPush" ColumnName="bit_synPush" />
+                <ScalarProperty Name="vchar_PushUser" ColumnName="vchar_PushUser" />
+                <ScalarProperty Name="vchar_PushVerify" ColumnName="vchar_PushVerify" />
+                <ScalarProperty Name="IsOpen" ColumnName="IsOpen" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_SFI_TrackNum">
+            <EntityTypeMapping TypeName="db_SFIModel.tb_SFI_TrackNum">
+              <MappingFragment StoreEntitySet="tb_SFI_TrackNum">
+                <ScalarProperty Name="int_Mappingid" ColumnName="int_Mappingid" />
+                <ScalarProperty Name="vchar_SFInum" ColumnName="vchar_SFInum" />
+                <ScalarProperty Name="vchar_AGnum" ColumnName="vchar_AGnum" />
+                <ScalarProperty Name="int_AGid" ColumnName="int_AGid" />
+                <ScalarProperty Name="vchar_updateUser" ColumnName="vchar_updateUser" />
+                <ScalarProperty Name="dttm_updateDttm" ColumnName="dttm_updateDttm" />
+                <ScalarProperty Name="dttm_AG_LastSyn" ColumnName="dttm_AG_LastSyn" />
+                <ScalarProperty Name="int_AG_Syn" ColumnName="int_AG_Syn" />
+                <ScalarProperty Name="char_IsStop" ColumnName="char_IsStop" />
+                <ScalarProperty Name="char_AG_Syn_sign" ColumnName="char_AG_Syn_sign" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

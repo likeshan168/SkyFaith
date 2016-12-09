@@ -151,6 +151,8 @@
     <Compile Include="BusinessObjects\DC\IOrganization.cs" />
     <Compile Include="BusinessObjects\DC\IPerson.cs" />
     <Compile Include="BusinessObjects\DC\PersonLogic.cs" />
+    <Compile Include="BusinessObjects\DPD\Agent.cs" />
+    <Compile Include="BusinessObjects\DPD\SFITrackNum.cs" />
     <Compile Include="BusinessObjects\NonPersistentObjects\Duplicate.cs" />
     <Compile Include="BusinessObjects\NonPersistentObjects\MyNonPersistentObject.cs" />
     <Compile Include="BusinessObjects\NonPersistentObjects\NonPersistentObject.cs" />
@@ -158,9 +160,14 @@
     <Compile Include="BusinessObjects\PersistentObjects\Book.cs" />
     <Compile Include="BusinessObjects\公共类\Encrypt.cs" />
     <Compile Include="BusinessObjects\鞋标签打印\产品信息.cs" />
-    <Compile Include="BusinessObjects\鞋标签打印\鞋图.cs" />
     <Compile Include="BusinessObjects\顺丰订单管理\Cargo.cs" />
     <Compile Include="BusinessObjects\顺丰订单管理\Order.cs" />
+    <Compile Include="Controllers\DPD\TrackNumInfoWinController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DPD\TrackNumInfoWinController.Designer.cs">
+      <DependentUpon>TrackNumInfoWinController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\MyNonPersistentClassWindowController.cs">
       <SubType>Component</SubType>
     </Compile>
