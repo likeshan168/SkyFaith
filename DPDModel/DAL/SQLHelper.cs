@@ -94,9 +94,19 @@ namespace DPDModelDPDModel.DAL
             using (IDbConnection conn = new SqlConnection(ConnStr))
             {
                 OpenConnection(conn);
-                int result = conn.Execute(sqlStr, commandTimeout: 300);
-                CloseConnection(conn);
-                return result == 0 ? false : true;
+                IDbTransaction tran = conn.BeginTransaction();
+                try
+                {
+                    int result = conn.Execute(sqlStr, transaction: tran, commandTimeout: 300);
+                    tran.Commit();
+                    CloseConnection(conn);
+                    return result == 0 ? false : true;
+                }
+                catch
+                {
+                    tran.Rollback();
+                    return false;
+                }
             }
         }
         /// <summary>

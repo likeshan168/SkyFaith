@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DPDTrack.ModelView;
 
 namespace DPDTrack
 {
@@ -16,6 +17,9 @@ namespace DPDTrack
         public MainFrm()
         {
             InitializeComponent();
+            var view = new TrackSearchView();
+            view.Dock = DockStyle.Fill;
+            xtraTabPage1.Controls.Add(view);
         }
     }
 }

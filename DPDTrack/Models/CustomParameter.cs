@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace DPDTrack.Models
 {
-   public class SearchParameter
+   public class CustomParameter
     {
-        public GridControl Grid { get; set; }
+        public int AgentID { get; set; }
         public SplashScreenManager SplashScreenManager { get; set; }
     }
 }

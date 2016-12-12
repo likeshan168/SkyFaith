@@ -51,6 +51,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="DevExpress.BonusSkins.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -86,6 +90,19 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelView\CheckPointLogViewModel.cs" />
+    <Compile Include="Views\CheckPointLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CheckPointLog.Designer.cs">
+      <DependentUpon>CheckPointLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InputDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\InputDataFrm.Designer.cs">
+      <DependentUpon>InputDataFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoadingFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,23 +116,30 @@
       <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\CBXAgent.cs" />
-    <Compile Include="Models\SearchParameter.cs" />
-    <Compile Include="ModelView\TrackSearchView.cs">
+    <Compile Include="Models\CustomParameter.cs" />
+    <Compile Include="ModelView\InputDataFrmViewModel.cs" />
+    <Compile Include="Views\TrackSearchView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ModelView\TrackSearchView.Designer.cs">
+    <Compile Include="Views\TrackSearchView.Designer.cs">
       <DependentUpon>TrackSearchView.cs</DependentUpon>
     </Compile>
     <Compile Include="ModelView\TrackSearchViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\CheckPointLog.resx">
+      <DependentUpon>CheckPointLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InputDataFrm.resx">
+      <DependentUpon>InputDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoadingFrm.resx">
       <DependentUpon>LoadingFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModelView\TrackSearchView.resx">
+    <EmbeddedResource Include="Views\TrackSearchView.resx">
       <DependentUpon>TrackSearchView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -130,6 +154,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

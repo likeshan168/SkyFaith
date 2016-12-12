@@ -1,7 +1,7 @@
 ﻿using Dapper;
+using DPDModel.BLL;
 using DPDModel.Models;
 using DPDModelDPDModel.DAL;
-using SyncOrderTracking.BLL;
 using SyncOrderTracking.ru.dpd.wstest;
 using System;
 using System.Collections.Generic;
