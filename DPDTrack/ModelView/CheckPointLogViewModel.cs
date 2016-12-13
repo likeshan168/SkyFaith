@@ -55,7 +55,14 @@ namespace DPDTrack.ModelView
         private ObservableCollection<ServerLog> GetTrackRecordLogs()
         {
             string sqlStr = $"SELECT [log_time],[SFI_Number],[AG_Number],'{CBXAgent.Agname}' as [代理名称],[vchar_result],[nvchar_Error] FROM [db_SFI].[dbo].[tb_ServerLog] WHERE [SFI_Number]='{SFITrackNum.vchar_SFInum}' AND [AG_Number]='{SFITrackNum.vchar_AGnum}' AND [AG_id]={CBXAgent.AGid} AND [char_type]='G' ORDER BY log_id DESC ";
-            return new ObservableCollection<ServerLog>(SQLHelper.GetObject<ServerLog>(sqlStr));
+            IEnumerable<ServerLog> logs = SQLHelper.GetObject<ServerLog>(sqlStr);
+            string[] results;
+            foreach (ServerLog log in logs)
+            {
+                results = log.vchar_result.Split('|');
+                log.vchar_result = $"共{results[0]}条检查点，成功导入{results[1]}条新数据，{results[2]}条错误";
+            }
+            return new ObservableCollection<ServerLog>(logs);
         }
 
         private ObservableCollection<TrackRecord> GetTrackRecords()

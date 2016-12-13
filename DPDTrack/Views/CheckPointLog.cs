@@ -12,6 +12,7 @@ using DPDTrack.ModelView;
 using DPDModel.Models;
 using DPDTrack.Models;
 using DevExpress.XtraGrid.Views.Base;
+using DevExpress.Utils.MVVM;
 
 namespace DPDTrack.Views
 {
@@ -28,6 +29,11 @@ namespace DPDTrack.Views
             }
         }
 
+        void OnDisposing()
+        {
+            var context = MVVMContext.FromControl(this);
+            if (context != null) context.Dispose();
+        }
         private void InitBindings(SFITrackNum track, CBXAgent agent)
         {
             mvvmContext1.ViewModelType = typeof(CheckPointLogViewModel);
@@ -52,6 +58,8 @@ namespace DPDTrack.Views
             fluentAPI.BindCommand(btnDelete, x => x.DeleteTrackRecord());
             fluentAPI.BindCommand(btnSubmit, x => x.AddTrackRecord());
             fluentAPI.BindCommand(btnRefresh, x => x.RefreshLogs(null), x => splashScreenManager1);
+
+            
         }
 
         private void gridView_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)

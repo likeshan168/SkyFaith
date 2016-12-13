@@ -90,7 +90,16 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\WindowsMessages.cs" />
+    <Compile Include="ModelView\BusinessPartnerViewModel.cs" />
     <Compile Include="ModelView\CheckPointLogViewModel.cs" />
+    <Compile Include="ModelView\NewAgentViewModel.cs" />
+    <Compile Include="Views\BusinessPartnerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\BusinessPartnerView.Designer.cs">
+      <DependentUpon>BusinessPartnerView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CheckPointLog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +127,18 @@
     <Compile Include="Models\CBXAgent.cs" />
     <Compile Include="Models\CustomParameter.cs" />
     <Compile Include="ModelView\InputDataFrmViewModel.cs" />
+    <Compile Include="Views\NewAgentFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NewAgentFrm.Designer.cs">
+      <DependentUpon>NewAgentFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewAgentView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\NewAgentView.Designer.cs">
+      <DependentUpon>NewAgentView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\TrackSearchView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,6 +148,9 @@
     <Compile Include="ModelView\TrackSearchViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\BusinessPartnerView.resx">
+      <DependentUpon>BusinessPartnerView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CheckPointLog.resx">
       <DependentUpon>CheckPointLog.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +162,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewAgentFrm.resx">
+      <DependentUpon>NewAgentFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewAgentView.resx">
+      <DependentUpon>NewAgentView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TrackSearchView.resx">
       <DependentUpon>TrackSearchView.cs</DependentUpon>
