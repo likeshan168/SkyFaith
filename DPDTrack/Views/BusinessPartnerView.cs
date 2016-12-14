@@ -78,16 +78,11 @@ namespace DPDTrack.Views
             fluentAPI.SetBinding(txtKeyWords, x => x.EditValue, x => x.SelectedAgent.vchar_synStopKeyWord);
             fluentAPI.SetBinding(txtSyncTimSpan, x => x.EditValue, x => x.SelectedAgent.int_synSpacing);
 
-            fluentAPI.SetBinding(btnSave, x => x.Enabled, x => x.IsSaveEnabled);
-            fluentAPI.SetBinding(btnAdd, x => x.Enabled, x => x.IsAddEnabled);
-            fluentAPI.SetBinding(btnModify, x => x.Enabled, x => x.IsModifyEnabled);
 
-            fluentAPI.BindCommand(btnModify, x => x.ModifyAgentInfo());
             fluentAPI.BindCommand(btnAdd, x => x.AddAgentInfo());
             fluentAPI.BindCommand(btnDelete, x => x.DeleteSelectedAgent());
             fluentAPI.BindCommand(btnSave, x => x.SaveAgentInfo());
 
-            fluentAPI.SetBinding(btnModify, x => x.Text, x => x.ModifyButtonText);
             fluentAPI.SetBinding(gpcSync, x => x.Enabled, x => x.IsGPCSync);
             fluentAPI.SetBinding(gpcQuery, x => x.Enabled, x => x.IsGPCQuery);
             fluentAPI.SetBinding(gpcPush, x => x.Enabled, x => x.IsGPCPush);

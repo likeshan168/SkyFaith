@@ -18,10 +18,6 @@ namespace DPDTrack.ModelView
         public BusinessPartnerViewModel()
         {
             Agents = GetAgeents();
-            IsSaveEnabled = false;
-            IsAddEnabled = true;
-            IsModifyEnabled = true;
-            ModifyButtonText = "修改";
         }
 
         public IMessageBoxService MessageBoxService
@@ -53,17 +49,7 @@ namespace DPDTrack.ModelView
         /// datagrid中被选中的行
         /// </summary>
         public virtual Agent SelectedAgent { get; set; }
-        /// <summary>
-        /// 设置保存按钮是否可用
-        /// </summary>
-        public virtual bool IsSaveEnabled { get; set; }
-        public virtual bool IsAddEnabled { get; set; }
-        public virtual bool IsModifyEnabled { get; set; }
-        /// <summary>
-        /// 设置修改按钮的显示名称
-        /// </summary>
-        public virtual string ModifyButtonText { get; set; }
-
+        
         public virtual bool IsGPCSync { get; set; }
         public virtual bool IsGPCQuery { get; set; }
         public virtual bool IsGPCPush { get; set; }
@@ -77,32 +63,12 @@ namespace DPDTrack.ModelView
             return new ObservableCollection<Agent>(SQLHelper.GetObject<Agent>(sqlStr));
         }
         /// <summary>
-        /// 点击修改按钮的事件
-        /// </summary>
-        public virtual void ModifyAgentInfo()
-        {
-            if(IsSaveEnabled)
-            {
-                IsSaveEnabled = false;
-                ModifyButtonText = "修改";
-                IsAddEnabled = false;
-            }
-            else
-            {
-                IsSaveEnabled = true;
-                ModifyButtonText = "取消";
-                IsAddEnabled = true;
-            }
-        }
-        /// <summary>
         /// 点击添加按钮的事件
         /// </summary>
         public virtual void AddAgentInfo()
         {
 
             ClearAgentInfo();
-            IsSaveEnabled = true;
-            IsModifyEnabled = false;
             //NewAgentFrm newAgentFrm = new NewAgentFrm();
             //DialogResult result = newAgentFrm.ShowDialog();
             //SplashScreenService.ShowSplashScreen();
@@ -285,18 +251,12 @@ namespace DPDTrack.ModelView
                     }
                 }
                 SplashScreenService.HideSplashScreen();
-                IsSaveEnabled = false;
-                ModifyButtonText = "修改";
-                IsModifyEnabled = true;
-                IsAddEnabled = true;
                 #endregion
             }
             catch (Exception ex)
             {
                 SplashScreenService.HideSplashScreen();
                 MessageBoxService.ShowMessage($"保存失败:{ex.Message}", "提示信息", MessageButton.OK, MessageIcon.Error);
-                IsSaveEnabled = true;
-                ModifyButtonText = "取消";
             }
 
         }

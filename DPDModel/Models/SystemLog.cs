@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,33 +13,28 @@ namespace DPDModel.Models
         private DateTime _dttm;
         private int? _agid;
         private string _result;
-        /// <summary>
-        /// 
-        /// </summary>
+        [Browsable(false)]
         public int int_id
         {
             set { _int_id = value; }
             get { return _int_id; }
         }
-        /// <summary>
-        /// 
-        /// </summary>
+        [DisplayName("服务器时间")]
+
         public DateTime dttm
         {
             set { _dttm = value; }
             get { return _dttm; }
         }
-        /// <summary>
-        /// 
-        /// </summary>
+        [Browsable(false)]
+
         public int? AGid
         {
             set { _agid = value; }
             get { return _agid; }
         }
-        /// <summary>
-        /// 
-        /// </summary>
+        [DisplayName("日志内容")]
+
         public string result
         {
             set { _result = value; }

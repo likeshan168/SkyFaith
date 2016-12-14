@@ -94,6 +94,7 @@
     <Compile Include="Models\WindowsMessages.cs" />
     <Compile Include="ModelView\BusinessPartnerViewModel.cs" />
     <Compile Include="ModelView\CheckPointLogViewModel.cs" />
+    <Compile Include="ModelView\CheckPointServerMgrViewModel.cs" />
     <Compile Include="ModelView\NewAgentViewModel.cs" />
     <Compile Include="Views\BusinessPartnerView.cs">
       <SubType>UserControl</SubType>
@@ -106,6 +107,12 @@
     </Compile>
     <Compile Include="Views\CheckPointLog.Designer.cs">
       <DependentUpon>CheckPointLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckPointServerMgrView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CheckPointServerMgrView.Designer.cs">
+      <DependentUpon>CheckPointServerMgrView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\InputDataFrm.cs">
       <SubType>Form</SubType>
@@ -154,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CheckPointLog.resx">
       <DependentUpon>CheckPointLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CheckPointServerMgrView.resx">
+      <DependentUpon>CheckPointServerMgrView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\InputDataFrm.resx">
       <DependentUpon>InputDataFrm.cs</DependentUpon>

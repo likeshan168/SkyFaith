@@ -25,6 +25,10 @@ namespace DPDTrack
             var bpv = new BusinessPartnerView();
             bpv.Dock = DockStyle.Fill;
             xtraTabPage2.Controls.Add(bpv);
+
+            var checkPointServerView = new CheckPointServerMgrView();
+            checkPointServerView.Dock = DockStyle.Fill;
+            xtraTabPage3.Controls.Add(checkPointServerView);
         }
     }
 }

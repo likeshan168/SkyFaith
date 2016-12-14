@@ -34,7 +34,6 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.btnModify = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.gpcPush = new DevExpress.XtraEditors.GroupControl();
             this.txtPushServerVerifyCode = new DevExpress.XtraEditors.TextEdit();
@@ -121,7 +120,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl1.Controls.Add(this.btnDelete);
             this.groupControl1.Controls.Add(this.btnSave);
-            this.groupControl1.Controls.Add(this.btnModify);
             this.groupControl1.Controls.Add(this.btnAdd);
             this.groupControl1.Controls.Add(this.gpcPush);
             this.groupControl1.Controls.Add(this.gpcQuery);
@@ -158,17 +156,9 @@
             this.btnSave.TabIndex = 13;
             this.btnSave.Text = "保存";
             // 
-            // btnModify
-            // 
-            this.btnModify.Location = new System.Drawing.Point(672, 220);
-            this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(75, 23);
-            this.btnModify.TabIndex = 13;
-            this.btnModify.Text = "修改";
-            // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(568, 220);
+            this.btnAdd.Location = new System.Drawing.Point(665, 220);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 12;
@@ -518,7 +508,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.SimpleButton btnDelete;
         private DevExpress.XtraEditors.SimpleButton btnSave;
-        private DevExpress.XtraEditors.SimpleButton btnModify;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
         private DevExpress.Utils.MVVM.MVVMContext mvvmContext1;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
