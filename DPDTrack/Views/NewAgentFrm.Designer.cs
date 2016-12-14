@@ -49,7 +49,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NewAgentFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "NewAgentFrm";
+            this.Text = "新增商业伙伴信息";
             this.ResumeLayout(false);
 
         }

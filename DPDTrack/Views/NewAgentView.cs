@@ -13,20 +13,22 @@ using DPDModel.Models;
 using DevExpress.Utils.MVVM;
 using DPDTrack.ModelView;
 using DPDTrack.Models;
+using DevExpress.Utils.MVVM.Services;
 
 namespace DPDTrack.Views
 {
-    
+
     public partial class NewAgentView : XtraUserControl
     {
         public NewAgentView()
         {
             InitializeComponent();
-            if (!DesignMode)
-            {
-                InitBindings();
-              
-            }
+            Load += NewAgentView_Load;
+        }
+
+        private void NewAgentView_Load(object sender, EventArgs e)
+        {
+            InitBindings();
         }
 
         void OnDisposing()
@@ -41,6 +43,7 @@ namespace DPDTrack.Views
 
             mvvmContext1.ViewModelType = typeof(NewAgentViewModel);
             var fluentAPI = mvvmContext1.OfType<NewAgentViewModel>();
+            mvvmContext1.RegisterService(SplashScreenService.Create(splashScreenManager1));
             fluentAPI.SetBinding(txtAgentName, x => x.EditValue, x => x.Agent.vchar_AGname);
             fluentAPI.SetBinding(txtContactor, x => x.EditValue, x => x.Agent.vchar_AGLinkMan);
             fluentAPI.SetBinding(txtContactNum, x => x.EditValue, x => x.Agent.vchar_AGcontect);
@@ -58,28 +61,10 @@ namespace DPDTrack.Views
 
             fluentAPI.SetBinding(txtKeyWords, x => x.EditValue, x => x.Agent.vchar_synStopKeyWord);
             fluentAPI.SetBinding(txtSyncTimSpan, x => x.EditValue, x => x.Agent.int_synSpacing);
+            var viewModel = mvvmContext1.GetViewModel<NewAgentViewModel>();
+            if (Parent is NewAgentFrm)
+                viewModel.NewAgentFrm = Parent as NewAgentFrm;
 
-            //fluentAPI.SetBinding(gpcSync, x => x.Enabled, x => x.Agent.int_AGtype, t =>
-            //{
-            //    if (t == "检查点提供方")
-            //        return true;
-            //    else
-            //        return false;
-            //});
-            //fluentAPI.SetBinding(gpcQuery, x => x.Enabled, x => x.Agent.int_AGtype, t =>
-            //{
-            //    if (t == "检查点查询方")
-            //        return true;
-            //    else
-            //        return false;
-            //});
-            //fluentAPI.SetBinding(gpcPush, x => x.Enabled, x => x.Agent.int_AGtype, t =>
-            //{
-            //    if (t == "检查点推送接收方")
-            //        return true;
-            //    else
-            //        return false;
-            //});
 
             fluentAPI.SetBinding(gpcSync, x => x.Enabled, x => x.IsGPCSync);
             fluentAPI.SetBinding(gpcQuery, x => x.Enabled, x => x.IsGPCQuery);
@@ -89,17 +74,6 @@ namespace DPDTrack.Views
 
             fluentAPI.WithEvent<EventArgs>(txtAgentType, "SelectedIndexChanged").EventToCommand(x => x.AgentTypeChanged());
         }
-
-        //protected override void WndProc(ref Message m)
-        //{
-
-        //    if (m.Msg == (int)WindowsMessages.WM_NCDESTROY ||m.Msg == (int)WindowsMessages.WM_DESTROY)
-        //    {
-        //        Show();
-        //        return;
-        //    }
-        //    base.WndProc(ref m);
-        //}
 
     }
 }

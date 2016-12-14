@@ -90,6 +90,7 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\IForm.cs" />
     <Compile Include="Models\WindowsMessages.cs" />
     <Compile Include="ModelView\BusinessPartnerViewModel.cs" />
     <Compile Include="ModelView\CheckPointLogViewModel.cs" />

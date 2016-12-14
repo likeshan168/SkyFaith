@@ -3,6 +3,8 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using Dapper;
+using System;
+
 namespace DPDModelDPDModel.DAL
 {
     public class SQLHelper
@@ -102,11 +104,11 @@ namespace DPDModelDPDModel.DAL
                     CloseConnection(conn);
                     return result == 0 ? false : true;
                 }
-                catch
+                catch(Exception ex)
                 {
                     tran.Rollback();
-                    return false;
-                }
+                    throw ex;
+                } 
             }
         }
         /// <summary>
