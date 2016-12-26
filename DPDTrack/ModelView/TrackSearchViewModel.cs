@@ -195,7 +195,7 @@ namespace DPDTrack.ModelView
                 aGawbSign = AgentNo2.Substring(AgentNo2.Length - 2, 1);
             }
 
-            string sqlStr = $"INSERT INTO tb_SFI_TrackNum (vchar_SFInum, vchar_AGnum, int_AGid, vchar_updateUser, dttm_updateDttm,char_AG_Syn_sign) VALUES ('{OrderNo2}','{AgentNo2}','{SelectedAgent.AGid}','sfi',GETDATE(),'{aGawbSign}');";
+            string sqlStr = $"INSERT INTO tb_SFI_TrackNum (vchar_SFInum, vchar_AGnum, int_AGid, vchar_updateUser, dttm_updateDttm,char_AG_Syn_sign) VALUES ('{OrderNo2}','{AgentNo2}','{SelectedAgent.AGid}','{MainFrm.CurrentUser}',GETDATE(),'{aGawbSign}');";
             sqlStr = $"{sqlStr} select * from tb_SFI_TrackNum where int_AGid={SelectedAgent.AGid} AND CONVERT(varchar(10),tb_SFI_TrackNum.dttm_updateDttm,112) ='{ImportDate.ToString("yyyyMMdd")}';";
             IList<SFITrackNum> tracks = SQLHelper.GetObject<SFITrackNum>(sqlStr).ToList();
 

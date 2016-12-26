@@ -13,8 +13,9 @@ using DPDTrack.Views;
 
 namespace DPDTrack
 {
-    public partial class MainFrm : DevExpress.XtraEditors.XtraForm
+    public partial class MainFrm : XtraForm
     {
+        public static string CurrentUser { get; set; }
         public MainFrm()
         {
             InitializeComponent();

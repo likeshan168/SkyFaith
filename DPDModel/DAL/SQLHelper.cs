@@ -14,7 +14,7 @@ namespace DPDModelDPDModel.DAL
         /// 数据库连接字符串
         /// </summary>
         //private static string ConnStr = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
-        private static string ConnStr = "server=47.88.149.87;database=db_SFI;uid=sfiuser;pwd=skyfaith";
+        private static string ConnStr = "server=47.88.149.87;database=db_SFI;uid=sa;pwd=skyfaith";
 
 
         /// <summary>
@@ -44,12 +44,12 @@ namespace DPDModelDPDModel.DAL
         /// </summary>
         /// <param name="sql">sql语句</param>
         /// <returns></returns>
-        public static string GetStringFromDB(string sql)
+        public static T GetStringFromDB<T>(string sql)
         {
             using (IDbConnection conn = new SqlConnection(ConnStr))
             {
                 OpenConnection(conn);
-                return (string)conn.ExecuteScalar(sql);
+                return (T)conn.ExecuteScalar(sql);
             }
         }
         /// <summary>

@@ -58,7 +58,7 @@ namespace DPDTrack.ModelView
                         //获取最后一位的值
                         aGawbSign = agentNo.Substring(agentNo.Length - 2, 1);
                     }
-                    sqlStr = $"{sqlStr} INSERT INTO tb_SFI_TrackNum (vchar_SFInum, vchar_AGnum, int_AGid, vchar_updateUser, dttm_updateDttm,char_AG_Syn_sign) VALUES ('{orderNo}','{agentNo}',{para.AgentID},'sfi',GETDATE(),'{aGawbSign}');";
+                    sqlStr = $"{sqlStr} INSERT INTO tb_SFI_TrackNum (vchar_SFInum, vchar_AGnum, int_AGid, vchar_updateUser, dttm_updateDttm,char_AG_Syn_sign) VALUES ('{orderNo}','{agentNo}',{para.AgentID},'{MainFrm.CurrentUser}',GETDATE(),'{aGawbSign}');";
 
                 }
 

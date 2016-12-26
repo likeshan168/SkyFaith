@@ -20,7 +20,13 @@ namespace DPDTrack
             DevExpress.UserSkins.BonusSkins.Register();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
 
-            Application.Run(new MainFrm());
+            var loginFrm = new LoginFrm();
+            if (loginFrm.ShowDialog() == DialogResult.OK)
+            {
+                //Application.Run(new MainFrm());
+                new MainFrm().ShowDialog();
+            }
+           
         }
     }
 }

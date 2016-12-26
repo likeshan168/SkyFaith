@@ -54,6 +54,7 @@
     <Compile Include="Models\ServerLog.cs" />
     <Compile Include="Models\SFITrackNum.cs" />
     <Compile Include="Models\SystemLog.cs" />
+    <Compile Include="Models\TMSTrackInfo.cs" />
     <Compile Include="Models\TrackRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

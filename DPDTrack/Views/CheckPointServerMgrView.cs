@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Linq;
 using DevExpress.XtraEditors;
 using DevExpress.Utils.MVVM;
 using DPDTrack.ModelView;
@@ -14,7 +6,7 @@ using DevExpress.Utils.MVVM.Services;
 
 namespace DPDTrack.Views
 {
-    public partial class CheckPointServerMgrView : DevExpress.XtraEditors.XtraUserControl
+    public partial class CheckPointServerMgrView : XtraUserControl
     {
         public CheckPointServerMgrView()
         {
@@ -40,6 +32,12 @@ namespace DPDTrack.Views
             fluentAPI.SetBinding(gridControl1, gc => gc.DataSource, x => x.Logs);
 
             fluentAPI.BindCommand(btnRefresh, x => x.GetServerLogs());
+
+            fluentAPI.SetBinding(lblServerStatus, lbl =>lbl.Text, x => x.ServerStatus);
+            fluentAPI.SetBinding(lblServerStatus, lbl =>lbl.BackColor, x => x.ServerStatusBackColor);
+
+            fluentAPI.SetBinding(btnStartServer, btn =>btn.Text, x => x.BtnStartServerText);
+            fluentAPI.BindCommand(btnStartServer, x => x.UpdateServerStatus());
         }
 
         void OnDisposing()

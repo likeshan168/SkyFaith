@@ -9,6 +9,9 @@ using System.Configuration;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Text;
+using Newtonsoft.Json;
 
 namespace SyncOrderTracking
 {
@@ -71,6 +74,11 @@ namespace SyncOrderTracking
                     {
                         //通过dpd单号去获取运单的状态信息
                         IList<TrackRecord> records = GetDPDInfo(track.vchar_AGnum);
+                        IEnumerable<TrackRecord> rcs = GetTMSInfo(track.vchar_SFInum);
+                        foreach (var item in rcs)
+                        {
+                            records.Add(item);
+                        }
                         intNew = 0;
                         intError = 0;
                         if (records.Count == 0)
@@ -130,6 +138,7 @@ namespace SyncOrderTracking
             logMsg = $"{strSysCode}-Agent:{mainAGname} 服务运行完成 - {intCompleted}{ProcessName}";
             SQLHelper.ExecuteStoredProcedure(Constants.sp_AddSystemLog, new { mainAGid = mainAGid, result = logMsg });
         }
+
         /// <summary>
         /// 调用DPD接口获取最新运单状态信息
         /// </summary>
@@ -170,6 +179,43 @@ namespace SyncOrderTracking
             #endregion
         }
 
+        /// <summary>
+        /// 调用DPD接口获取最新运单状态信息
+        /// </summary>
+        /// <param name="docCode">运单号</param>
+        /// <returns></returns>
+        private static IEnumerable<TrackRecord> GetTMSInfo(string docCode)
+        {
+            #region call tms service to get the tracking states
+
+            //WebClient webClient = new WebClient();
+            //string result = webClient.DownloadString($"http://101.201.28.235:8082/trackIndex.htm?documentCode={docCode}");
+            WebClient webClient = new WebClient();
+            byte[] bytes = webClient.DownloadData("http://localhost:8080/trackIndex.htm");
+            string result = Encoding.UTF8.GetString(bytes);
+
+            IEnumerable<TMSTrackInfo> infos = JsonConvert.DeserializeObject<IEnumerable<TMSTrackInfo>>(result);
+
+            foreach (TMSTrackInfo item in infos)
+            {
+                foreach (var data in item.data)
+                {
+                    foreach (var detail in data.trackDetails)
+                    {
+                        yield return new TrackRecord
+                        {
+                            dttm_Record_Dttm = detail.track_date,
+                            nvchar_Description = detail.track_content,
+                            nvchar_Description_Local = detail.track_content,
+                            nvchar_City = detail.track_location
+                        };
+                    }
+                }
+            }
+
+            #endregion
+        }
+
         public static void AllClear()
         {
             string strSql = $"UPDATE  tb_SFI_TrackNum SET int_AG_Syn = 0 WHERE int_AGid={mainAGid}";
@@ -207,7 +253,7 @@ namespace SyncOrderTracking
             try
             {
                 string strSql = "SELECT TOP 1 ServerStatus FROM tb_ServerConfig";
-                return SQLHelper.GetStringFromDB(strSql);
+                return SQLHelper.GetStringFromDB<string>(strSql);
             }
             catch
             {

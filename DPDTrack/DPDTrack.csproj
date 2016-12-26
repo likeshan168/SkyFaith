@@ -90,11 +90,18 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\IForm.cs" />
     <Compile Include="Models\WindowsMessages.cs" />
     <Compile Include="ModelView\BusinessPartnerViewModel.cs" />
     <Compile Include="ModelView\CheckPointLogViewModel.cs" />
     <Compile Include="ModelView\CheckPointServerMgrViewModel.cs" />
+    <Compile Include="ModelView\LoginViewModel.cs" />
     <Compile Include="ModelView\NewAgentViewModel.cs" />
     <Compile Include="Views\BusinessPartnerView.cs">
       <SubType>UserControl</SubType>
@@ -156,6 +163,9 @@
     <Compile Include="ModelView\TrackSearchViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\BusinessPartnerView.resx">
       <DependentUpon>BusinessPartnerView.cs</DependentUpon>
     </EmbeddedResource>
